@@ -117,11 +117,6 @@ export default {
              100: '100px',
          },
 
-        /* Box shadows herunder */
-        // boxShadow: {
-        //     drop25: '4px 4px 4px 0 rgb(0 0 0 / 0.25)', /* x y blur spread farve / opacity */  
-        // },
-
 		extend: {
         },
 	},
