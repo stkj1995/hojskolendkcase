@@ -60,7 +60,7 @@ export default {
 
         /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
          fontFamily: {
-            onest: ['Onest', 'sans-serif'], // Standard sans-serif skrifttype
+            onest: ['Onest-Black', 'sans-serif'], // Standard sans-serif skrifttype
             albert: ['Albert Sans', 'sans-serif'], // Til specifikke elementer
             londrina: ['Londrina Solid', 'black'], // Til cards
          },
