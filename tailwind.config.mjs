@@ -39,9 +39,22 @@ export default {
          },
 
          /* Tilføj din egen spacing nedenfor */
-        // spacing: {
-        //     'm': '40px',
-        // },
+         spacing: { 
+            'spacing-none' :'0',
+            'sm': '30px',
+            'm': '42px',
+            'ml':'49px',
+            'lg':'60px',
+            'xl':'75px',
+            '1xl':'88px',
+            '2xl': '96px',
+            '3xl':'107px',
+            '4xl':'120px',
+            '5xl':'132px',
+            '6xl':'148px',
+            '7xl':'152px',
+            '8xl':'162px',
+         },
 
         /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
         // fontFamily: {
