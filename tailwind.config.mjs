@@ -66,15 +66,27 @@ export default {
          },
 
         /* Tilføj dit typografiske hierarki herunder */
-        // fontSize: {
-        //     base: ['1rem', { lineHeight: '1.5rem' }],
-        //     large: ['2.5rem', { lineHeight: '3.75rem' }],
-        //   },
+        fontSize: {
+            'xs': ['0.8125rem', { lineHeight: '1rem' }], // 13px
+            'sm': ['0.9375rem', { lineHeight: '1.25rem' }], // 15px
+            'base': ['1.125rem', { lineHeight: '1.5rem' }], // 18px
+            'lg': ['1.25rem', { lineHeight: '1.75rem' }], // 20px
+            'xl': ['1.5rem', { lineHeight: '2rem' }], // 24px
+            '2xl': ['2rem', { lineHeight: '2.5rem' }], // 32px
+            '3xl': ['2.25rem', { lineHeight: '2.75rem' }], // 36px
+            '4xl': ['2.5rem', { lineHeight: '3rem' }], // 40px
+            '5xl': ['2.75rem', { lineHeight: '3.25rem' }], // 44px
+            '6xl': ['2.8125rem', { lineHeight: '3.375rem' }], // 45px
+            '7xl': ['3.25rem', { lineHeight: '4rem' }], // 52px
+            '8xl': ['4rem', { lineHeight: '5rem' }], // 64px
+            '9xl': ['5.625rem', { lineHeight: '6.75rem' }], // 90px
+          },
 
         /* Tilføj dit fontvægt-hierarki nedenfor */
-        //   fontWeight: {
-        //     regular: '400',
-        //   },
+           fontWeight: {
+             regular: '400',
+            
+           },
 
         /* Borders - borderstørrelser herunder */
         // borderWidth: {
