@@ -99,16 +99,23 @@ export default {
              0: '0px',
              2: '2px',
              3: '3px',
-             20: '20px',
-             30: '30px',
-             50: '50px',
+             'sm':'4px',
+             'md': '8px',
+             'lg':'16px',
+             'xl':'32px',
+             '2xl':'128px',
+             '3xl':'360px',            
          },
 
         /* Border radius størrelser herunder */
-        // borderRadius: {
-        //     DEFAULT: '1.25rem',
-        //     none: '0px',
-        // },
+         borderRadius: {
+             DEFAULT: '1.25rem',
+             none: '0px',
+             20: '20px',
+             30: '30px',
+             50: '50px',
+             100: '100px',
+         },
 
         /* Box shadows herunder */
         // boxShadow: {
