@@ -70,19 +70,19 @@ export default {
 
     /* Tilføj dit typografiske hierarki herunder */
     fontSize: {
-      xs: ["13px", { lineHeight: "16px" }], // 0.8125rem -> 13px
-      sm: ["15px", { lineHeight: "20px" }], // 0.9375rem -> 15px
-      base: ["18px", { lineHeight: "24px" }], // 1.125rem -> 18px
-      lg: ["20px", { lineHeight: "28px" }], // 1.25rem -> 20px
-      xl: ["24px", { lineHeight: "32px" }], // 1.5rem -> 24px
-      "2xl": ["32px", { lineHeight: "40px" }], // 2rem -> 32px
-      "3xl": ["36px", { lineHeight: "44px" }], // 2.25rem -> 36px
-      "4xl": ["40px", { lineHeight: "48px" }], // 2.5rem -> 40px
-      "5xl": ["44px", { lineHeight: "52px" }], // 2.75rem -> 44px
-      "6xl": ["45px", { lineHeight: "54px" }], // 2.8125rem -> 45px
-      "7xl": ["52px", { lineHeight: "64px" }], // 3.25rem -> 52px
-      "8xl": ["64px", { lineHeight: "80px" }], // 4rem -> 64px
-      "9xl": ["90px", { lineHeight: "108px" }], // 5.625rem -> 90px
+      xs: '13px',
+        sm: '15px',
+        base: '18px',
+        lg: '20px',
+        xl: '24px',
+        '2xl': '32px',
+        '3xl': '36px',
+        '4xl': '40px',
+        '5xl': '44px',
+        '6xl': '45px',
+        '7xl': '52px',
+        '8xl': '64px',
+        '9xl': '90px',
     },    
 
     /* Tilføj dit fontvægt-hierarki nedenfor */
