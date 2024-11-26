@@ -94,11 +94,15 @@ export default {
            },
 
         /* Borders - borderstørrelser herunder */
-        // borderWidth: {
-        //     DEFAULT: '1px',
-        //     0: '0px',
-        //     2: '2px',
-        // },
+         borderWidth: {
+             DEFAULT: '1px',
+             0: '0px',
+             2: '2px',
+             3: '3px',
+             20: '20px',
+             30: '30px',
+             50: '50px',
+         },
 
         /* Border radius størrelser herunder */
         // borderRadius: {
