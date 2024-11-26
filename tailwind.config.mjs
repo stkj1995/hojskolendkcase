@@ -63,7 +63,7 @@ export default {
             onestBlack: ['Onest-Black', 'sans-serif'],
             onestRegular: ['Onest-Regular', 'sans-serif'],
             albert: ['Albert Sans', 'sans-serif'],
-            londrina: ['Londrina Solid', 'cursive'],
+            londrina: ['Londrina Solid', 'sans-serif'],
           },
 
         /* Tilføj dit typografiske hierarki herunder */
