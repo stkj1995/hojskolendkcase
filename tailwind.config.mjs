@@ -7,24 +7,36 @@ export default {
 	theme: {
 
         /* Tilføj din egen farvepalette nedenfor */
-        // colors: {
-        //     transparent: 'transparent',
-        //     current: 'currentColor',
-        //     'farvenavn': {
-        //         50: '#hexkode',     
-        //         100: '#hexkode',
-        //         200: '#hexkode',
-        //         300: '#hexkode',
-        //         400: '#hexkode',
-        //         500: '#hexkode',
-        //         600: '#hexkode',
-        //         700: '#hexkode',
-        //         800: '#hexkode',
-        //         900: '#hexkode',
-        //     },
-        //     'white': '#fff',
-        //     'black': '#000',
-        // },
+         colors: {
+            transparent: 'transparent',
+            current: 'currentColor',
+            'orange': {
+                50: "#FFF1E5",
+                100: "#FFE2CC",
+                200: "#FFC599",
+                300: "#FFA866",
+                400: "#FF8B33",
+                500: "#FF6E00",
+                600: "#CC5800",
+                700: "#994200",
+                800: "#662C00",
+                900: "#331600",
+            },
+            'blue': {
+                50: "#F2F5F8",
+                100: "#E5EBF0",
+                200: "#C8D4DF",
+                300: "#AEC0D0",
+                400: "#91A9BF",
+                500: "#7794B0",
+                600: "#567694",
+                700: "#425A71",
+                800: "#2B3B4A",
+                900: "#161F27",
+                },
+            'white': '#fff',
+            'black': '#000',
+         },
 
          /* Tilføj din egen spacing nedenfor */
         // spacing: {
