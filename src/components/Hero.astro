@@ -5,24 +5,33 @@ import herobillede from "../assets/images/hero.png";
 import logo from "../assets/images/logo.svg";
 ---
 
-<section class="relative grid grid-cols-5 grid-rows-5 w-screen h-screen">
+<section class="relative grid grid-cols-1 grid-rows-5 w-screen h-screen">
     <!-- Logo -->
     <div x-data="{ bobble: false }" x-init="bobble = true" 
          class="absolute top-4 left-4 z-20">
-         <img 
-         src={logo.src} 
-         alt="Logo" 
-         class="h-24 w-auto"
-         @mouseenter="bobble = !bobble" 
-         :class="bobble ? 'animate-bobble' : ''">  
-     
+        <img 
+            src={logo.src} 
+            alt="Logo" 
+            class="h-16 w-auto md:h-24" 
+            @mouseenter="bobble = !bobble" 
+            :class="bobble ? 'animate-bobble' : ''">  
     </div>
 
-    <!-- Herobillede med tekst -->
-    <Image src={herobillede} class="col-start-1 col-span-5 row-start-1 row-span-5 z-0 h-full md:w-full md:object-cover" alt="" />
-      
-    <div class="col-start-1 row-start-4 col-span-5 md:col-start-2 md:col-span-3 md:row-start-4 md:row-span-2 z-20 mt-16">
-        <h1 class="text-5xl md:text-8xl uppercase text-white">Højskole i udlandet</h1>
-        <h2 class="text-3xl md:text-5xl text-white">Eventyrligt højskoleophold i udlandet for unge</h2>
+    <!-- Hero Image -->
+    <Image 
+        src={herobillede} 
+        alt="Hero billede" 
+        class="absolute inset-0 w-full h-full object-cover z-0"
+    />
+
+    <!-- Tekst -->
+    <div class="col-start-1 row-start-5 col-span-1 z-20 p-4 text-center flex flex-col items-center gap-4 md:col-start-2 md:col-span-3 md:row-start-4 md:row-span-2 md:items-start md:gap-8 md:p-8">
+        <h1 class="text-4xl font-bold uppercase text-white md:text-6xl lg:text-8xl">
+            Højskole i udlandet
+        </h1>
+        <h2 class="text-xl text-white md:text-3xl lg:text-5xl">
+            Eventyrligt højskoleophold i udlandet for unge
+        </h2>
     </div>
 </section>
+
