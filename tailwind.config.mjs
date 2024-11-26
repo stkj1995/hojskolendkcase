@@ -11,12 +11,12 @@ export default {
             transparent: 'transparent',
             current: 'currentColor',
             'orange': {
-                50: "#FFF1E5",
+                50: "#FFF1E5", //beige
                 100: "#FFE2CC",
                 200: "#FFC599",
                 300: "#FFA866",
                 400: "#FF8B33",
-                500: "#FF6E00",
+                500: "#FF6E00", //orange
                 600: "#CC5800",
                 700: "#994200",
                 800: "#662C00",
@@ -24,18 +24,18 @@ export default {
             },
             'blue': {
                 50: "#F2F5F8",
-                100: "#E5EBF0",
+                100: "#E5EBF0", //lightblue
                 200: "#C8D4DF",
                 300: "#AEC0D0",
                 400: "#91A9BF",
-                500: "#7794B0",
+                500: "#7794B0", //blue
                 600: "#567694",
                 700: "#425A71",
                 800: "#2B3B4A",
                 900: "#161F27",
                 },
-            'white': '#fff',
-            'black': '#000',
+            'white': '#fff', //white
+            'black': '#000', //black
          },
 
          /* Tilføj din egen spacing nedenfor */
