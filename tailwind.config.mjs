@@ -41,7 +41,9 @@ export default {
          /* Tilføj din egen spacing nedenfor */
          spacing: { 
             'spacing-none' :'0',
-            'sm': '30px',
+            'xs': '15px',
+            's': '20px',
+            'sm': '30px', 
             'm': '42px',
             'ml':'49px',
             'lg':'60px',
@@ -57,10 +59,11 @@ export default {
          },
 
         /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
-        // fontFamily: {
-        //     sans: ['Prompt', 'sans-serif'],
-        //     'display': ['Courier', 'monospace'], /* eksempel på ekstra font */
-        // },
+         fontFamily: {
+            sans: ['Onest', 'sans-serif'], // Standard sans-serif skrifttype
+            albert: ['Albert Sans', 'sans-serif'], // Til specifikke elementer
+            londrina: ['Londrina Solid', 'black'], // Til cards
+         },
 
         /* Tilføj dit typografiske hierarki herunder */
         // fontSize: {
