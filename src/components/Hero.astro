@@ -6,22 +6,23 @@ import logo from "../assets/images/logo.svg";
 ---
 
 <section class="relative grid grid-cols-5 grid-rows-5 w-screen h-screen">
-    <!-- Logo with animation -->
+    <!-- Logo -->
     <div x-data="{ bobble: false }" x-init="bobble = true" 
          class="absolute top-4 left-4 z-20">
-        <img 
-            src="/logo.svg" 
-            alt="Logo" 
-            class="h-24 w-auto"
-            @mouseenter="bobble = !bobble" 
-            :class="bobble ? 'animate-bobble' : ''">
+         <img 
+         src={logo.src} 
+         alt="Logo" 
+         class="h-24 w-auto"
+         @mouseenter="bobble = !bobble" 
+         :class="bobble ? 'animate-bobble' : ''">  
+     
     </div>
 
     <!-- Background and Hero Content -->
     <Image src={herobillede} class="col-start-1 col-span-5 row-start-1 row-span-5 z-0 h-full md:w-full md:object-cover" alt="" />
       
     <div class="col-start-1 row-start-4 col-span-5 md:col-start-2 md:col-span-3 md:row-start-4 md:row-span-2 z-20 mt-16">
-        <h1 class="text-5xl md:text-8xl animate__animated animate__fadeInUp uppercase">Højskole i udlandet</h1>
-        <h2 class="text-3xl md:text-5xl animate__animated animate__fadeInUp">Eventyrligt højskoleophold i udlandet for unge</h2>
+        <h1 class="text-5xl md:text-8xl uppercase text-white">Højskole i udlandet</h1>
+        <h2 class="text-3xl md:text-5xl text-white">Eventyrligt højskoleophold i udlandet for unge</h2>
     </div>
 </section>
