@@ -59,12 +59,12 @@ export default {
          },
 
         /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
-         fontFamily: {
-            onestBlack: ['Onest-Black', 'sans-serif'], 
+        fontFamily: {
+            onestBlack: ['Onest-Black', 'sans-serif'],
             onestRegular: ['Onest-Regular', 'sans-serif'],
-            albert: ['Albert Sans', 'sans-serif'], 
-            londrina: ['Londrina Solid', 'black'], 
-         },
+            albert: ['Albert Sans', 'sans-serif'],
+            londrina: ['Londrina Solid', 'cursive'],
+          },
 
         /* Tilføj dit typografiske hierarki herunder */
         fontSize: {

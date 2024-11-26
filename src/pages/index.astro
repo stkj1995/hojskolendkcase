@@ -11,18 +11,17 @@ import Header from "../components/Header.astro";
 	<article class="max-w-screen-xl mx-auto relative">
     
 
-		<h1 class="font-onestBlack text-4xl text-gray-800 mb-4">Onest Black - Overskrift</h1>
-		<p class="font-onestRegular text-lg text-gray-600 mb-4">Onest Regular - Dette er en test af brødtekst i Onest Regular.</p>
-		<h2 class="font-albert text-3xl text-gray-800 mb-4">Albert Sans - Underoverskrift</h2>
-		<p class="font-londrina text-2xl text-gray-700">Londrina Solid - Dekorativ skrifttype til kort eller fremhævet tekst.</p>
-
 			<p class="text-sm">Dette er en lille tekst (15px).</p>
 			<p class="text-base">Dette er en standardtekst (18px).</p>
 			<h1 class="text-7xl">Dette er en stor overskrift (52px).</h1>
 			<h2 class="text-9xl">Dette er en kæmpe overskrift (90px).</h2>
 			
 
-
+			<h1 class="font-onestBlack text-4xl text-gray-800 mb-4">Onest Black - Overskrift</h1>
+			<p class="font-onestRegular text-lg text-gray-600 mb-4">Onest Regular - Dette er en test af brødtekst i Onest Regular.</p>
+			<h2 class="font-albert text-3xl text-gray-800 mb-4">Albert Sans - Underoverskrift</h2>
+			<p class="font-londrina text-2xl text-gray-700">Londrina Solid - Dekorativ skrifttype til kort eller fremhævet tekst.</p>
+			
 
 		
 	</article>
@@ -30,21 +29,32 @@ import Header from "../components/Header.astro";
 
 
 <style>
-	@font-face {
+		@font-face {
 	font-family: 'Onest-Black';
 	src: url('/fonts/Onest-Black.woff2') format('woff2');
+	font-weight: 900;
+	font-style: normal;
 	}
+
 	@font-face {
 	font-family: 'Onest-Regular';
 	src: url('/fonts/Onest-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
 	}
+
 	@font-face {
 	font-family: 'Albert Sans';
-	src: url('/fonts/Albert-Sans.woff') format('woff');
+	src: url('/fonts/AlbertSans-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
 	}
+
 	@font-face {
 	font-family: 'Londrina Solid';
-	src: url('/fonts/Londrina-Solid-Black.woff') format('woff');
+	src: url('/fonts/LondrinaSolid-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
 	}
 
   </style>
