@@ -1,22 +1,42 @@
 ---
 import logo from "../assets/images/logo.svg";
 import sticky from "../assets/images/sticky-cta.png";
+import tilmeld from "../assets/images/tilmeld.png";
 ---
 <div class="max-w-screen-xl mx-auto">
-     <!-- Logo -->
-         <div class="absolute top-4 left-4 z-20">
+    <header>
+        <!-- Logo -->
+        <div class="absolute top-8 left-8 z-20">
             <img 
-             src={logo.src} 
-             alt="Logo" 
-             class="h-16 w-auto md:h-24">  
+            src={logo.src} 
+            alt="Logo" 
+            class="h-16 w-auto md:h-24">  
         </div>
 
-        <!-- Sticky CTA-knap -->
-         <div class="bottom-8 right-10 z-20 fixed">
-            <img 
-                src={sticky.src} 
-                alt="sticky CTA" 
-                class="h-16 w-auto md:h-24">  
+        <!-- Link til ophold og priser -->
+        <div class="absolute right-40 top-16 z-20">
+            <a href="https://www.hojskolendk.dk/priser/" target="_blank" class="text-white uppercase hover:underline hover:underline-offset-4 transition-all duration-300">Ophold og priser</a>
         </div>
+
+        <!-- Tilmeld -->
+        <div class="absolute right-8 top-12 z-20">
+            <a href="https://www.hojskolendk.dk/tilmeld/tilmeld-dig-hoejskole-i-udlandet-hojskolendk/" target="_blank" class="block group">
+                <img 
+                    src={tilmeld.src} 
+                    alt="Tilmeldingsknap" 
+                    class="h-8 w-auto md:h-12 transition-transform duration-300 transform hover:scale-110 border border-transparent group-hover:border-white rounded-2xl">
+            </a>
+        </div>
+    </header>
+
+    <!-- Sticky CTA-knap -->
+    <div class="bottom-8 right-10 z-20 fixed group">
+        <a href="https://www.hojskolendk.dk/priser/" target="_blank" class="block group">
+        <img 
+            src={sticky.src} 
+            alt="sticky CTA" 
+            class="h-16 w-auto md:h-24 transition-all duration-300 transform hover:scale-110 border border-transparent group-hover:border-white rounded-full">  
+        </a>
+    </div>
 </div>
     
