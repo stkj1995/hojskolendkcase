@@ -44,6 +44,7 @@ export default {
         white: "#FFF", // Hvid som tekstfarve
         black: "#000", // Sort tekstfarve
       },
+   
 
       /* Spacing */
       spacing: {

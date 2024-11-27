@@ -34,5 +34,6 @@
     .custom-padding {
         @apply p-xs md:p-lg;
       }
-      
+    
+    
 }

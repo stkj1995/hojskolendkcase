@@ -20,6 +20,8 @@ const { title } = Astro.props;
 
 	</head>
 	<body class="bg-beige min-h-screen">
+	<!-- Progress bar -->
+	<div class="progress-bar h-4 fixed left-0 top-0 w-3 z-50 bg-blue-500"></div>
 
 		<header class="">
 			<Header></Header>
@@ -35,3 +37,21 @@ const { title } = Astro.props;
 			
 	</body>
 </html>
+
+<script>
+	window.addEventListener('scroll', function () {
+	  // TypeScript type assertion til at sikre, at progressBar er et HTMLDivElement
+	  const progressBar = document.querySelector('.progress-bar') as HTMLDivElement;
+  
+	  // Hvis progressBar findes
+	  if (progressBar) {
+		const scrollHeight = document.documentElement.scrollHeight - window.innerHeight; // Total scrollbar height
+		const scrollPosition = window.scrollY; // Hvor langt der er scrollet
+		const scrollPercent = (scrollPosition / scrollHeight) * 100; // Beregn procenten af scrollen
+	  
+		// Opdater progress barens højde
+		progressBar.style.height = `${scrollPercent}%`; // Skaler fra 0% til 100% afhængigt af scrollen
+	  }
+	});
+  </script>
+  
