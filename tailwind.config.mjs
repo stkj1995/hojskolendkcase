@@ -2,11 +2,10 @@
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
 
-  /* Vil du overskrive eller extende tailwinds indstillinger?  */
 
   theme: {
     extend: {
-      /* Tilføj din egen farvepalette nedenfor */
+      /* Farvepalette */
       colors: {
         transparent: "transparent",
         current: "currentColor",
@@ -36,12 +35,17 @@ export default {
         },
         white: "#fff", // white
         black: "#000", // black
+        beige: "#FFF1E5", // beige
       },
       backgroundColor: {
         beige: "#FFF1E5", // Brug samme farve til baggrund
       },
+      textColor: {
+        white: "#FFF", // Hvid som tekstfarve
+        black: "#000", // Sort tekstfarve
+      },
 
-      /* Tilføj din egen spacing nedenfor */
+      /* Spacing */
       spacing: {
         "spacing-none": "0",
         xs: "15px",
@@ -61,7 +65,7 @@ export default {
         "8xl": "162px",
       },
 
-      /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
+      /* Fonte */
       fontFamily: {
         onestBlack: ["Onest-Black", "sans-serif"],
         onestRegular: ["Onest-Regular", "sans-serif"],
@@ -69,7 +73,7 @@ export default {
         londrina: ["Londrina Solid", "sans-serif"],
       },
 
-      /* Tilføj dit typografiske hierarki herunder */
+      /* Typografisk hierarki */
       fontSize: {
         xs: "13px",
         sm: "15px",
@@ -86,7 +90,7 @@ export default {
         "9xl": "90px",
       },
 
-      /* Tilføj dit fontvægt-hierarki nedenfor */
+      /* Fontvægt */
       fontWeight: {
         regular: "400",
         medium: "500",
@@ -96,7 +100,7 @@ export default {
         black: "900",
       },
 
-      /* Borders - borderstørrelser herunder */
+      /* Border størrelser */
       borderWidth: {
         DEFAULT: "1px",
         0: "0px",
@@ -110,7 +114,7 @@ export default {
         "3xl": "360px",
       },
 
-      /* Border radius størrelser herunder */
+      /* Border radius størrelser */
       borderRadius: {
         DEFAULT: "1.25rem",
         none: "0px",
@@ -121,5 +125,10 @@ export default {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("@tailwindcss/aspect-ratio"), require("@tailwindcss/container-queries")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/container-queries"),
+  ],
 };
