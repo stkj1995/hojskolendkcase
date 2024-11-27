@@ -30,4 +30,9 @@
         font-weight: 900;
         font-style: normal;
     }
+
+    .custom-padding {
+        @apply p-xs md:p-lg;
+      }
+      
 }
