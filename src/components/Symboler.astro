@@ -1,0 +1,53 @@
+---
+import { Image } from 'astro:assets';
+import grafik1 from "../assets/images/grafik.png";
+import grafik2 from "../assets/images/grafik2.png";
+import grafik3 from "../assets/images/grafik3.png";
+import grafik4 from "../assets/images/grafik4.png";
+import grafik5 from "../assets/images/grafik5.png";
+---
+<section>
+    <div class="flex flex-col gap-4 mx-auto md:ml-36 w-96 md:w-1/3">
+        <h2 class="text-xl uppercase font-black text-black sm:text-2xl md:text-4xl  md:text-left" style="font-family: 'Onest-Black', sans-serif;">
+            En rejse højskole fyldt med oplevelser</h2>
+            <p>Vil du gerne på højskole i udlandet, tilbyder vi de mest attraktive højskoleophold i udlandet, hvor du besøger flere skønne og spændende lande og deltage i spændende og inspirerende undervisning og alverdens fede aktiviteter.
+ <br> <br> Din højskole rejse kan blandt andet indeholde:</p>
+    </div>
+
+<div class="overflow-x-auto md:overflow-x-visible flex md:justify-center">
+    <div class="flex flex-row gap-60 md:gap-20 mt-20 mb-20 mx-auto">
+      <div class="flex flex-col w-60 md:w-44 text-center md:text-left">
+        <Image src={grafik1} alt="blog 1" class="mx-auto md:m-0 w-28" />
+        <h3 class="md:text-lg uppercase text-black mt-16" style="font-family: 'Onest-Regular', sans-serif;">Teambuilding</h3>
+        <p class="text-base text-black sm:text-sm md:text-base mt-5" style="font-family: 'Albert Sans', sans-serif;">Hvorfor vælge et kedeligt kursus i Danmark, når du kan rejse ud, udvikle dig og få erfaring til CV’et? Sammen med andre unge lærer du om samarbejde, fællesskab og stærke teams – værdifulde redskaber til studie og karriere.</p>
+      </div>
+  
+      <div class="flex flex-col w-60 md:w-44 text-center md:text-left">
+        <Image src={grafik2} alt="blog 2" class="mx-auto md:m-0 w-28" />
+        <h3 class="md:text-lg uppercase text-black mt-16" style="font-family: 'Onest-Regular', sans-serif;">Frivilligt arbejde og kulturforståelse</h3>
+        <p class="text-base text-black sm:text-sm md:text-base mt-5" style="font-family: 'Albert Sans', sans-serif;">Hvordan kan det være at flere mennesker end nogensinde oplever stress, angst, depression, ensomhed, m.v. når vi lever i en tid med mere velstand, flere muligheder og et højere uddannelsesniveau…</p>
+      </div>
+  
+      <div class="flex flex-col w-60 md:w-44 text-center md:text-left">
+        <Image src={grafik3} alt="blog 3" class="mx-auto md:m-0 w-28" />
+        <h3 class="md:text-lg uppercase text-black mt-16" style="font-family: 'Onest-Regular', sans-serif;">Friuger - Et væld af muligheder</h3>
+        <p class="text-base text-black sm:text-sm md:text-base mt-5" style="font-family: 'Albert Sans', sans-serif;">For 11 år siden tog jeg de første skridt for at realisere en drøm. En drøm om at skabe et arbejdsliv med dyb mening, fyldt med passion og livsglæde. Et…</p>
+      </div>
+  
+      <div class="flex flex-col w-60 md:w-44 text-center md:text-left">
+        <Image src={grafik4} alt="blog 4" class="mx-auto md:m-0 w-28" />
+        <h3 class="md:text-lg uppercase text-black mt-16" style="font-family: 'Onest-Regular', sans-serif;">Spændende kulturoplevelser</h3>
+        <p class="text-base text-black sm:text-sm md:text-base mt-5" style="font-family: 'Albert Sans', sans-serif;">For 11 år siden tog jeg de første skridt for at realisere en drøm. En drøm om at skabe et arbejdsliv med dyb mening, fyldt med passion og livsglæde. Et…</p>
+      </div>
+
+      <div class="flex flex-col w-60 md:w-44 mx-auto md:m-0 text-center md:text-left">
+        <Image src={grafik5} alt="blog 1" class="mx-auto md:m-0 w-28"/>
+        <h3 class="md:text-lg uppercase text-black md:text-left mt-6" style="font-family: 'Onest-Regular', sans-serif;">Vilde naturoplevelser</h3>
+        <p class="text-base text-black sm:text-sm md:text-base mt-5" style="font-family: 'Albert Sans', sans-serif;">For 11 år siden tog jeg de første skridt for at realisere en drøm. En drøm om at skabe et arbejdsliv med dyb mening, fyldt med passion og livsglæde. Et…</p>
+        </div>
+    </div>
+  </div>
+
+</section>
+  
+
