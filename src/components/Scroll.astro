@@ -19,9 +19,9 @@ import scroll8 from "../assets/images/scroll8.png";
 
 <div class="relative pt-16 pb-20 mx-24 md:mx-44 md:ml-32">
   <!-- Karrusel Container -->
-  <div class="flex items-center overflow-x-auto whitespace-nowrap scroll-smooth md:pt-5 md:pb-5 md:pl-5">
+  <div class="flex items-center overflow-x-auto whitespace-nowrap scroll-smooth pt-5 pb-5 pl-5 md:pt-5 md:pb-5 md:pl-5">
     <!-- Knap til scrolling (venstre) -->
-    <button id="scroll-left" class="text-4xl z-10 absolute -left-12 top-1/2 transform -translate-y-1/2" style="color:#7794B0">
+    <button id="scroll-left" class="text-4xl z-10 absolute -left-12 top-1/2 transform -translate-y-1/2 transition hover:scale-110" style="color:#7794B0">
       ←
     </button>
 
@@ -95,39 +95,31 @@ import scroll8 from "../assets/images/scroll8.png";
     </div>
   </div>
 </a>
-   
-
-
-
-
-
-
-    
-  </div>
+ </div>
 
   <!-- Knap til scrolling (højre) -->
-  <button id="scroll-right" class="text-4xl z-10 absolute -right-12 top-1/2 transform -translate-y-1/2" style="color:#7794B0">
+  <button id="scroll-right" class="text-4xl z-10 absolute -right-12 top-1/2 transform -translate-y-1/2 transition hover:scale-110" style="color:#7794B0">
     →
   </button>
 </div>
 
 
 <script>
-document.getElementById('scroll-left').addEventListener('click', function() {
-  const scrollContainer = document.querySelector('.overflow-x-auto');
-  scrollContainer.scrollBy({
-    left: -scrollContainer.clientWidth / 4, // Scroll med en fjerdedel af containerens bredde
-    behavior: 'smooth'
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById('scroll-left').addEventListener('click', function() {
+      const scrollContainer = document.querySelector('.overflow-x-auto');
+      scrollContainer.scrollBy({
+        left: -scrollContainer.clientWidth / 4, // Scroll med en fjerdedel af containerens bredde
+        behavior: 'smooth'
+      });
+    });
+
+    document.getElementById('scroll-right').addEventListener('click', function() {
+      const scrollContainer = document.querySelector('.overflow-x-auto');
+      scrollContainer.scrollBy({
+        left: scrollContainer.clientWidth / 4, // Scroll med en fjerdedel af containerens bredde
+        behavior: 'smooth'
+      });
+    });
   });
-});
-
-document.getElementById('scroll-right').addEventListener('click', function() {
-  const scrollContainer = document.querySelector('.overflow-x-auto');
-  scrollContainer.scrollBy({
-    left: scrollContainer.clientWidth / 4, // Scroll med en fjerdedel af containerens bredde
-    behavior: 'smooth'
-  });
-});
-
-
 </script>
