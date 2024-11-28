@@ -13,7 +13,7 @@ const BurgerMenu = () => {
       <button onClick={toggleMenu} aria-label="Toggle menu" className="lg:hidden p-2 focus:outline-none">
         <div className="space-y-1">
           <span
-            className={`block w-6 h-0.5 bg-black transition-transform duration-300 ${
+            className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${
               isOpen ? 'rotate-45 translate-y-1.5' : ''
             }`}
           ></span>
