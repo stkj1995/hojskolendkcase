@@ -2,21 +2,77 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import { Image } from 'astro:assets';
 import cardimg from "../assets/images/card.webp";
+import Button from "../components/Button.astro";
 ---
 
 <MainLayout title="Højskolendk Case">
-<section class=" flex flex-col justify-center mt-40 w-4/5 mx-auto rounded-3xl	" style="background-color: #7794B0;">
-    <Image src={cardimg} alt="Instagram" class="w-48 object-cover rounded-3xl	"/>
-    <h3 class="font-black uppercase text-white">hawaii, australien, japan, bali & gili islands</h3>
-<p>Varighed: 4 måneder</p>
+<section class=" flex flex-col justify-center mt-40 w-3/5 md:w-5/12 mx-auto rounded-3xl text-white px-8 py-8 md:px-10 md:py-10" style="background-color: #7794B0;">
+    <Image src={cardimg} alt="Instagram" class="w-96 md:w-full md:h-96 object-cover rounded-3xl	"/>
+    <h3 class="font-black uppercase text-white mt-3 md:text-2xl">hawaii, australien, japan, bali & gili islands</h3>
+<div class="flex flex-col mt-5 gap-2">
+<p>VARIGHED: 4 måneder</p>
 <p>INTRODAGE: New York City, USA</p>
+</div>
+
+<div class="flex flex-col gap-2 mt-5">
 <p>1. måned: Oahu, Hawaii</p>
 <p>2. måned: Byron Bay, Australien</p>
 <p>3. måned: Tokyo, Kyoto, Hiroshima & Osaka, Japan</p>
 <p>4. måned: Ubud, Bali & Gili Islands</p>
+</div>
 
-<p>AFREJSE</p>
+<div class="mt-8">
+    <p>AFREJSE</p>
+    <div class="flex flex-col gap-2 mt-3">
+    <div class="flex flex-row justify-between">
+        <p>22. januar 2025</p>
+        <p>84.500 DKK</p>
+    </div>
+    <div class="flex flex-row justify-between">
+        <p>13. februar 2025</p>
+        <p>84.500 DKK</p>
+    </div>
+    <div class="flex flex-row justify-between">
+        <p>21. januar 2026</p>
+        <p>85.500 DKK</p>
+    </div>
+    <div class="flex flex-row justify-between">
+        <p>11. februar 2026</p>
+        <p>85.500 DKK</p>
+    </div>
+</div>
+</div>
 
+<div class="flex flex-col md:flex-row gap-2 mt-8 md:justify-between">
+<p class="font-black text-xl">2 PLADSER TILBAGE </p>
+<p class="font-bold text-xs uppercase">Flybillet tur/retur er inkluderet </p>
+</div>
+
+
+<div class="flex flex-col md:flex-row gap-3 md:justify-between mt-3">
+<div class="w-48 md:w-52">
+<Button 
+                textMobile="RESERVER EN PLADS"
+                textDesktop="RESERVER EN PLADS"
+                link="https://www.hojskolendk.dk/tilmeld/reserver-en-plads/"
+                backgroundColor="#FF6E00"
+                textColor="#FFFFFF"
+                size="small md:large"
+            />
+</div>
+<div class="w-60 md:w-64">
+<Button 
+                textMobile="LÆS MERE OM OPHOLDET"
+                textDesktop="LÆS MERE OM OPHOLDET"
+                link="https://www.hojskolendk.dk/tilmeld/reserver-en-plads/"
+                backgroundColor="#FFFFFF"
+                textColor="#FF6E00"
+                size="small md:large"
+            />
+ </div>
+</div>
 
 </section>
+
+
 </MainLayout>
