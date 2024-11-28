@@ -71,3 +71,26 @@ import scroll8 from "../assets/images/scroll8.png";
   </div>
   
 </section>
+
+
+<script>
+    const scrollContainer = document.querySelector('.overflow-x-auto');
+    const scrollLeft = document.getElementById('scroll-left');
+    const scrollRight = document.getElementById('scroll-right');
+    
+    scrollLeft.addEventListener('click', () => {
+      scrollContainer.scrollBy({
+        left: scrollContainer.clientWidth / 4, 
+        behavior: 'smooth',
+      });
+    });
+    
+    scrollRight.addEventListener('click', () => {
+      scrollContainer.scrollBy({
+        left: scrollContainer.clientWidth / 4, 
+        behavior: 'smooth', 
+      });
+    });
+    
+    </script>
+    
