@@ -17,10 +17,13 @@ const BurgerMenu = () => {
         </div>
       </button>
 
-      <div className={`absolute top-12 right-0 rounded shadow-lg ${isOpen ? "block" : "hidden"} text-white uppercase hover:underline hover:underline-offset-4 transition-all duration-300`} style={{ backgroundColor: "#7794B0" }}>
-        <ul>
+      <div
+        className={`fixed top-0 left-0 w-full h-96 flex items-center justify-center ${isOpen ? "block" : "hidden"} text-white uppercase hover:underline hover:underline-offset-4 transition-all duration-300`}
+        style={{ backgroundColor: "#7794B0" }}
+      >
+        <ul className="text-center">
           <li>
-            <a href="/card" className="text-white uppercase justify-center">
+            <a href="/card" className="text-white uppercase font-black text-3xl">
               Ophold og priser
             </a>
           </li>
@@ -31,3 +34,5 @@ const BurgerMenu = () => {
 };
 
 export default BurgerMenu;
+
+
