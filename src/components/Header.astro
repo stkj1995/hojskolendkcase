@@ -1,6 +1,7 @@
 ---
 import logo from "../assets/images/logo.svg";
 import Button from "./Button.astro";
+import BurgerMenu from './components/BurgerMenu.astro';
 ---
 <div class="max-w-screen-xl mx-auto">
     <header>
@@ -30,6 +31,11 @@ import Button from "./Button.astro";
                 size="small"
                 additionalClasses="px-6 py-2 text-white uppercase text-sm md:text-base hover:bg-orange-600 hover:scale-105 transition-transform duration-300 transform border border-transparent hover:border-white rounded-2xl"
             />
+        </div>
+
+           <!-- Burgermenu  -->
+           <div class="absolute top-12 right-2 z-20 sm:block md:hidden">
+            <BurgerMenu /> 
         </div>
         
         <!-- Sticky CTA-knap Header -->

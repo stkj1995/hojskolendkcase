@@ -1,0 +1,62 @@
+---
+
+---
+
+<div class="relative">
+    <!-- Burger Icon -->
+    <button 
+      id="burger-icon" 
+      class="absolute top-4 right-4 z-20 sm:block md:hidden text-white w-7 h-5 flex flex-col justify-between items-center"
+    >
+      <span id="line-1" class="block w-full h-1 bg-white transition-all duration-300"></span>
+      <span id="line-2" class="block w-full h-1 bg-white transition-all duration-300"></span>
+      <span id="line-3" class="block w-full h-1 bg-white transition-all duration-300"></span>
+    </button>
+  
+    <!-- Menu -->
+    <div id="menu" class="absolute top-16 right-0 w-64 bg-[#7794B0] text-white p-6 rounded-lg transform translate-x-full transition-all duration-300">
+      <ul>
+        <li class="mb-4">
+          <a href="/" class="block text-lg hover:text-gray-300">Home</a>
+        </li>
+        <li class="mb-4">
+          <a href="/about" class="block text-lg hover:text-gray-300">About Us</a>
+        </li>
+        <li class="mb-4">
+          <a href="/services" class="block text-lg hover:text-gray-300">Services</a>
+        </li>
+        <li class="mb-4">
+          <a href="/contact" class="block text-lg hover:text-gray-300">Contact</a>
+        </li>
+        <li class="mt-6">
+          <button class="w-full text-orange-500 border-2 border-white py-2 px-4 rounded-full hover:bg-white hover:text-gray-800 transition-all duration-300">
+            Call to Action
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Script for toggling the menu and burger icon -->
+  <script>
+    const burgerIcon = document.getElementById('burger-icon');
+    const menu = document.getElementById('menu');
+    const line1 = document.getElementById('line-1');
+    const line2 = document.getElementById('line-2');
+    const line3 = document.getElementById('line-3');
+  
+    burgerIcon.addEventListener('click', () => {
+      // Toggle the visibility of the menu
+      menu.classList.toggle('translate-x-full');
+      menu.classList.toggle('translate-x-0');
+  
+      // Toggle burger icon to change into a cross
+      line1.classList.toggle('rotate-45');
+      line1.classList.toggle('translate-y-2');
+      line2.classList.toggle('opacity-0');
+      line3.classList.toggle('-rotate-45');
+      line3.classList.toggle('translate-y-[-2px]');
+    });
+  </script>
+
+  
