@@ -46,6 +46,15 @@ const BurgerMenu = () => {
             </a>
           </li>
         </ul>
+
+        {/* Close button (X) in the top-right corner */}
+        <button
+          onClick={toggleMenu}
+          aria-label="Close menu"
+          className="absolute top-11 right-8 text-white text-3xl"
+        >
+          &times;
+        </button>
       </div>
     </div>
   );
