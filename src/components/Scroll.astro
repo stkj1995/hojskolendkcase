@@ -1,4 +1,96 @@
 ---
 import { Image } from 'astro:assets';
-import MainLayout from "../layouts/MainLayout.astro";
+import scroll1 from "../assets/images/scroll1.png";
+import scroll2 from "../assets/images/scroll2.png";
+import scroll3 from "../assets/images/scroll3.png";
+import scroll4 from "../assets/images/scroll4.png";
+import scroll5 from "../assets/images/scroll5.png";
+import scroll6 from "../assets/images/scroll6.png";
+import scroll7 from "../assets/images/scroll7.png";
+import scroll8 from "../assets/images/scroll8.png";
 ---
+<section>
+    <!-- tekst -->
+<div class="text-center md:text-left md:pl-32">
+    <h3 class="pb-6">HVILKEN HØJSKOLE ER DIN FAVORIT? </h3>
+    <h1 class="font-bold">HØJSKOLE I UDLANDET – VÆLG DIT EVENTYR!</h1>
+</div>
+<div class="relative pt-10 ml-24 mr-24 mx-10 md:mx-28 md:pt-10 md:pb-20">
+    <!-- Karrusel Container -->
+    <div class="flex items-center overflow-x-auto whitespace-nowrap scroll-smooth">
+      
+      <!-- Knapper til scrolling (venstre) -->
+      <button id="scroll-left" class="text-4xl z-10 absolute -left-12 top-80 transform -translate-y-1/2" style="color:#7794B0">
+        ←
+      </button>
+    
+      <!-- Billeder -->
+      <div class="flex ml-16 md:ml-0 md:gap-6">
+        <!-- På mobil: vis ét billede ad gangen (w-full), på desktop vis 1/4 -->
+        <div class="w-full md:w-1/4 flex-shrink-0">
+            <h4 class="text-white relative top-60 left-16 md:relative md:top-60 md:left-14" style="font-family:'Londrina Solid', sans-serif;">MALDIVERNE, SRI LANKA, <br> BALI & GILI ISLANDS</h4>
+          <Image src={scroll1} alt="gruppe af unge mennesker sammen" class="rounded-3xl" />
+        </div>
+        <div class="w-full md:w-1/4 flex-shrink-0">
+            <h4 class="text-white relative top-60 left-16 md:relative md:top-60 md:left-14" style="font-family:'Londrina Solid', sans-serif;">AUSTRALIEN, NZ, <br> BALI & GILI ISLANDS</h4>
+            <Image src={scroll2} alt="gruppe af unge mennesker sammen" class="rounded-3xl" />
+        </div>
+        <div class="w-full md:w-1/4 flex-shrink-0">
+            <h4 class="text-white relative top-60 left-16 md:relative md:top-60 md:left-14" style="font-family:'Londrina Solid', sans-serif;">HAWAII, AUSTRALIEN, <br> JAPAN, BALI & GILI ISLANDS</h4>
+            <Image src={scroll3} alt="gruppe af unge mennesker sammen" class="rounded-3xl" />
+        </div>
+        <div class="w-full md:w-1/4 flex-shrink-0">
+            <h4 class="text-white relative top-60 left-16 md:relative md:top-60 md:left-14" style="font-family:'Londrina Solid', sans-serif;">AUSTRALIEN, JAPAN,<br> BALI & GILI ISLANDS</h4>
+            <Image src={scroll4} alt="gruppe af unge mennesker sammen" class="rounded-3xl" />
+        </div>
+        <div class="w-full md:w-1/4 flex-shrink-0">
+            <h4 class="text-white relative top-60 left-16 md:relative md:top-60 md:left-14" style="font-family:'Londrina Solid', sans-serif;">MALDIVERNE, SRI LANKA, <br> BALI & GILI ISLANDS</h4>
+            <Image src={scroll5} alt="gruppe af unge mennesker sammen" class="rounded-3xl" />
+        </div>
+        <div class="w-full md:w-1/4 flex-shrink-0">
+            <h4 class="text-white relative top-60 left-16 md:relative md:top-60 md:left-14" style="font-family:'Londrina Solid', sans-serif;">MALDIVERNE, SRI LANKA, <br> BALI & GILI ISLANDS</h4>
+            <Image src={scroll6} alt="gruppe af unge mennesker sammen" class="rounded-3xl" />
+        </div>
+        <div class="w-full md:w-1/4 flex-shrink-0">
+            <h4 class="text-white relative top-60 left-16 md:relative md:top-60 md:left-14" style="font-family:'Londrina Solid', sans-serif;">MALDIVERNE, SRI LANKA, <br> BALI & GILI ISLANDS</h4>
+            <Image src={scroll7} alt="gruppe af unge mennesker sammen" class="rounded-3xl" />
+        </div>
+        <div class="w-full md:w-1/4 flex-shrink-0">
+            <h4 class="text-white relative top-60 left-16 md:relative md:top-60 md:left-14" style="font-family:'Londrina Solid', sans-serif;">MALDIVERNE, SRI LANKA, <br> BALI & GILI ISLANDS</h4>
+            <Image src={scroll8} alt="gruppe af unge mennesker sammen" class="rounded-3xl" />
+        </div>
+      </div>
+    </div>
+      <!-- Knapper til scrolling (højre) -->
+      <button id="scroll-right" class="text-4xl z-10 absolute -right-12 top-80 transform -translate-y-1/2" style="color:#7794B0">
+        →
+      </button>
+</div>
+    
+    </div>
+  </div>
+  
+</section>
+
+
+<script>
+    const scrollContainer = document.querySelector('.overflow-x-auto');
+    const scrollLeft = document.getElementById('scroll-left');
+    const scrollRight = document.getElementById('scroll-right');
+    
+    scrollLeft.addEventListener('click', () => {
+      scrollContainer.scrollBy({
+        left: scrollContainer.clientWidth / 4, 
+        behavior: 'smooth',
+      });
+    });
+    
+    scrollRight.addEventListener('click', () => {
+      scrollContainer.scrollBy({
+        left: scrollContainer.clientWidth / 4, 
+        behavior: 'smooth', 
+      });
+    });
+    
+    </script>
+    

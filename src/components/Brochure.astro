@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets';
+import brochure from "../assets/images/brochure.png";
+---
+
+<!-- STYLING NOTE:  -->
+<section class="pt-20 pl-5 pb-20 mx-4 ml-6 md:grid md:grid-cols-2 md:px-20 md:pb-32 md:pl-14 md:gap-10" style="">
+    <!-- tekst -->
+    <div class="px-8 pl-10 pb-16 md:ml-4 md:relative md:top-12">
+        <h3 class="pt-10 pb-5">FÅ ET DYBERE INDBLIK</h3>
+        <h1 class="pb-6 font-bold pt-4">LÆS VORES BROCHURE HER</h1>
+        <p class="pr-8">Vil du vide mere om vores højskolerejser og alt det, vi tilbyder? <br> <br>
+            Hent vores brochure og få et dybere indblik i de unikke rejseoplevelser, stærke fællesskaber og eventyrlige øjeblikke, der vil inspirere og præge dig for livet. 
+            <br> <br> Lad dig inspirere af de mange muligheder og find din næste store oplevelse!</p>
+
+        <!-- seperat grid til knapper -->
+        <div class="md:grid md:grid-cols-2 md:mr-40">
+            <div class="pt-10 md:mr-24 md:relative md:top-5">
+                <h3 class="pb-6">knap 1</h3>
+            </div>
+        </div>
+        <div class="md:grid md:grid-cols-2 md:pt-12">
+            <div class="pb-6 pt-5">
+                <p>knap 2</p>
+            </div>
+            <div class="pt-6 pb-4">
+                <p>Knap 3</p>
+            </div>
+
+        </div>
+    </div>
+
+      <div class="w-full h-full pl-16 pr-20 object-cover md:w-screen md:h-screen">
+        <Image src={brochure} alt='gruppe af unge mennesker sammen' class="">
+    </div>
+    <!-- for at gøre billede mindre så skriv md:pr-20 i class'en for image -->
+</section>

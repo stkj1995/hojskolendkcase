@@ -1,6 +1,42 @@
 ---
+import { Image } from 'astro:assets';
+import instagram from "../assets/images/ig-ikon.png";
+import facebook from "../assets/images/fb-ikon.png";
+import youtube from "../assets/images/yt-ikon.png";
+import tiktok from "../assets/images/tiktok-ikon.png";
+import mail from "../assets/images/mail-ikon.png";
+import linkdin from "../assets/images/linkedin-ikon.png";
+import skype from "../assets/images/skype-ikon.png";
+import samarbejd from "../assets/images/samarbejd.png";
 ---
-<!-- <div>
-    <p class="max-w-screen-xl mx-auto text-white">Footer - tilføj footerindhold</p>
+
+<div class="max-w-screen-xl mx-auto"></div>
+
+<section class="flex flex-col gap-20 justify-center md:flex-row ">
+<div>
+<div class="flex gap-5">
+<a href="https://www.facebook.com/hojskolendk/"><Image src={facebook} alt="Facebook" class=""/></a>
+<a href="https://www.instagram.com/hojskolendk/"><Image src={instagram} alt="Instagram" class=""/></a>
+<a href="https://www.youtube.com/user/HOJSKOLENDK"><Image src={youtube} alt="Youtube" class=""/></a>
+<a href="https://www.tiktok.com/@hojskolendk"><Image src={tiktok} alt="Tiktok" class=""/></a>
 </div>
-       -->
+</div>
+
+<div>
+<div class="flex gap-5">
+<a href="https://www.hojskolendk.dk/"><Image src={mail} alt="Mail" class=""/></a>
+<a href="https://www.linkedin.com/company/h-jskolen-dk/"><Image src={linkdin} alt="LinkedIn" class=""/></a>
+<a href="https://www.hojskolendk.dk/"><Image src={skype} alt="Skype" class=""/></a>
+</div>
+</div>
+
+<div>
+<Image src={samarbejd} alt="Samarbejdspartnere" class="w-4/5"/>
+</div>
+</section>
+
+<div class="flex flex-col gap-32 md:flex-row justify-center mb-5">
+    <p class="text-xs">HÖJSKOLENDK er medlem af Rejsegarantifonden.</p>
+    <p class="text-xs">Handelsbetingelser / Cookiepolitik / Data- & Privatlivspolitik</p>
+    <p class="text-xs">Copyright © HÖJSKOLENDK 2022 • CVR 32491162</p>
+</div>
