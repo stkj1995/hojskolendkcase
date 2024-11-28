@@ -3,6 +3,7 @@ import logo from "../assets/images/logo.svg";
 import Button from "./Button.astro";
 import BurgerMenu from '../components/BurgerMenu.astro';
 ---
+
 <div class="max-w-screen-xl mx-auto">
     <header>
         <!-- Logo -->
@@ -33,13 +34,8 @@ import BurgerMenu from '../components/BurgerMenu.astro';
             />
         </div>
 
-           <!-- Burgermenu  -->
-           <div class="absolute top-12 right-2 z-20 sm:block md:hidden">
-            <BurgerMenu /> 
-        </div>
-        
         <!-- Sticky CTA-knap Header -->
-         <div class="bottom-8 right-10 z-20 fixed">
+        <div class="bottom-8 right-10 z-20 fixed">
             <Button 
                 textMobile="Book Ophold Nu"
                 textDesktop="Book Ophold Nu"
@@ -49,7 +45,12 @@ import BurgerMenu from '../components/BurgerMenu.astro';
                 size="large"
                 additionalClasses="flex items-center justify-center text-center h-24 w-24 text-white uppercase text-base md:text-base hover:scale-105 transition-transform duration-300 transform border border-transparent hover:border-white rounded-full"
             />
-        </div>  
-    </header> 
+        </div>
+
+        <!-- Burger Menu-->
+        <div class="absolute top-12 right-6 z-20 sm:block md:hidden">
+            <BurgerMenu />
+        </div>
+
+    </header>
 </div>
-       
