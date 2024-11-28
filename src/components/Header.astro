@@ -1,56 +1,57 @@
 ---
 import logo from "../assets/images/logo.svg";
 import Button from "./Button.astro";
-import BurgerMenu from '../components/BurgerMenu.astro';
+import BurgerMenu from '../components/BurgerMenu.jsx'; // Importer BurgerMenu React-komponenten
 ---
 
 <div class="max-w-screen-xl mx-auto">
-    <header>
-        <!-- Logo -->
-        <div class="absolute top-8 left-8 z-20">
-            <a href="/" class="block group">
-                <img 
-                    src={logo.src} 
-                    alt="Logo" 
-                    class="h-16 w-auto md:h-24">  
-            </a>
-        </div>
+  <header>
+    <!-- Logo -->
+    <div class="absolute top-8 left-8 z-20">
+      <a href="/" class="block group">
+        <img 
+          src={logo.src} 
+          alt="Logo" 
+          class="h-16 w-auto md:h-24" />  
+      </a>
+    </div>
 
-        <!-- Link til ophold og priser -->
-        <div class="absolute right-40 top-16 z-20 hidden md:block">
-            <a href="/card" target="_blank" class="text-white uppercase hover:underline hover:underline-offset-4 transition-all duration-300">Ophold og priser</a>
-        </div>
+    <!-- Link til ophold og priser -->
+    <div class="absolute right-40 top-16 z-20 hidden md:block">
+      <a href="/card" target="_blank" class="text-white uppercase hover:underline hover:underline-offset-4 transition-all duration-300">Ophold og priser</a>
+    </div>
 
-        <!-- Tilmeld-knap header -->
-        <div class="absolute right-20 top-12 z-20 sm:right-4 md:right-8">
-            <Button 
-                textMobile="Tilmeld"
-                textDesktop="Tilmeld"
-                link="/card"
-                backgroundColor="#FF6E00"
-                textColor="white"
-                size="small"
-                additionalClasses="px-6 py-2 text-white uppercase text-sm md:text-base hover:bg-orange-600 hover:scale-105 transition-transform duration-300 transform border border-transparent hover:border-white rounded-2xl"
-            />
-        </div>
+    <!-- Tilmeld-knap header -->
+    <div class="absolute right-20 top-12 z-20 sm:right-4 md:right-8">
+      <Button 
+        textMobile="Tilmeld"
+        textDesktop="Tilmeld"
+        link="/card"
+        backgroundColor="#FF6E00"
+        textColor="white"
+        size="small"
+        additionalClasses="px-6 py-2 text-white uppercase text-sm md:text-base hover:bg-orange-600 hover:scale-105 transition-transform duration-300 transform border border-transparent hover:border-white rounded-2xl"
+      />
+    </div>
 
-        <!-- Sticky CTA-knap Header -->
-        <div class="bottom-8 right-10 z-20 fixed">
-            <Button 
-                textMobile="Book Ophold Nu"
-                textDesktop="Book Ophold Nu"
-                link="/card"
-                backgroundColor="#FF6E00"
-                textColor="white"
-                size="large"
-                additionalClasses="flex items-center justify-center text-center h-24 w-24 text-white uppercase text-base md:text-base hover:scale-105 transition-transform duration-300 transform border border-transparent hover:border-white rounded-full"
-            />
-        </div>
+    <!-- Sticky CTA-knap Header -->
+    <div class="bottom-8 right-10 z-20 fixed">
+      <Button 
+        textMobile="Book Ophold Nu"
+        textDesktop="Book Ophold Nu"
+        link="/card"
+        backgroundColor="#FF6E00"
+        textColor="white"
+        size="large"
+        additionalClasses="flex items-center justify-center text-center h-24 w-24 text-white uppercase text-base md:text-base hover:scale-105 transition-transform duration-300 transform border border-transparent hover:border-white rounded-full"
+      />
+    </div>
 
-        <!-- Burger Menu-->
-        <div class="absolute top-12 right-6 z-20 sm:block md:hidden">
-            <BurgerMenu />
-        </div>
+    <!-- Burger Menu -->
+    <div class="absolute top-12 right-6 z-20 sm:block md:hidden">
+      <!-- Indlæser BurgerMenu React-komponenten -->
+      <BurgerMenu client:load />
+    </div>
 
-    </header>
+  </header>
 </div>
