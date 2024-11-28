@@ -62,7 +62,7 @@ const BurgerMenu = () => {
         </div>
 
         {/* Close button (X) in the top-right corner */}
-        <button onClick={toggleMenu} aria-label="Close menu" className="absolute top-10 right-7 text-white text-5xl">
+        <button onClick={toggleMenu} aria-label="Close menu" className="absolute top-9 right-7 text-white text-5xl">
           &times;
         </button>
       </div>
