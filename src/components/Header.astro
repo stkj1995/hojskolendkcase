@@ -60,15 +60,17 @@ import Button from "./Button.astro";
         </div>
         
         <!-- Sticky CTA-knap Header -->
-         <!-- <Button></Button> -->
-            <div class="bottom-8 right-10 z-20 fixed">
-            <a href="https://www.hojskolendk.dk/priser/" 
-               target="_blank" 
-               class="flex items-center justify-center text-center h-24 w-24 text-white uppercase text-base md:text-base hover:scale-105 transition-transform duration-300 transform border border-transparent hover:border-white rounded-full"
-               style="background-color: #FF6E00;">
-                Book <br> Ophold <br> Nu
-            </a>
-        </div>       
+         <div class="bottom-8 right-10 z-20 fixed">
+            <Button 
+                textMobile="Book Ophold Nu"
+                textDesktop="Book Ophold Nu"
+                link="https://www.hojskolendk.dk/priser/"
+                backgroundColor="#FF6E00"
+                textColor="white"
+                size="large"
+                additionalClasses="flex items-center justify-center text-center h-24 w-24 text-white uppercase text-base md:text-base hover:scale-105 transition-transform duration-300 transform border border-transparent hover:border-white rounded-full"
+            />
+        </div>   
 
         <script>
         // Toggle burger menu visibility
