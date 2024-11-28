@@ -38,7 +38,7 @@ const BurgerMenu = () => {
         {/* Logo */}
         <div className="absolute top-8 left-8 z-20">
           <a href="/" className="block group">
-          <img src="/logo.svg" alt="Logo" className="h-16 w-auto md:h-24" />
+          <img src="logo.svg" alt="Logo" className="h-16 w-auto md:h-24" />
           </a>
         </div>
 
