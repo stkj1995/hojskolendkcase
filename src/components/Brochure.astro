@@ -5,7 +5,7 @@ import Button from './Button.astro';
 ---
 
 <!-- STYLING NOTE:  -->
- <section class=" flex flex-col md:flex-row">
+ <section class=" flex flex-col md:flex-row md:pr-10">
     <div>
      <!-- sektion med tekst og img -->
         <section class="pt-20 pl-5 pb-20 mx-4 ml-6 md:px-20 md:pl-14 md:gap-10" style="">
@@ -67,7 +67,7 @@ import Button from './Button.astro';
 
     <div>
     <!-- img -->
-          <div class="flex justify-center object-cover">
+          <div class="flex w-80 mx-auto md:w-full md:mt-28 justify-center">
             <Image src={brochure} alt='gruppe af unge mennesker sammen' class=" hover:scale-105">
         </div>
         <!-- for at gøre billede mindre så skriv md:pr-20 i class'en for image -->
