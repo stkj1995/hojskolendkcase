@@ -5,74 +5,73 @@ import Button from './Button.astro';
 ---
 
 <!-- STYLING NOTE:  -->
- <section class="">
+ <section class=" flex flex-col md:flex-row">
+    <div>
      <!-- sektion med tekst og img -->
-    <section class="pt-20 pl-5 pb-20 mx-4 ml-6 md:grid md:grid-cols-2 md:px-20 md:pl-14 md:gap-10" style="">
+        <section class="pt-20 pl-5 pb-20 mx-4 ml-6 md:px-20 md:pl-14 md:gap-10" style="">
         <!-- tekst -->
         <div class="px-8 pl-10 pb-16 md:ml-4 md:relative md:top-12">
             <h3 class="pt-10 pb-5 text-sm md:text-lg" style="font-family: 'Onest-Black' sans-serif;">FÅ ET DYBERE INDBLIK</h3>
             <h2 class="pb-6 pt-4 text-3xl md:text-4xl" style="font-weight: 900; font-family: 'Onest-Black' sans-serif;">LÆS VORES BROCHURE HER</h2>
-            <p class="pr-8 text-base md:text-base" style="font-family: 'Albert Sans' sans-serif;">Vil du vide mere om vores højskolerejser og alt det, vi tilbyder? <br> <br>
+            <p class="pr-8 text-base md:text-base font-light" style="font-family: 'Albert Sans' sans-serif;">Vil du vide mere om vores højskolerejser og alt det, vi tilbyder? <br> <br>
                 Hent vores brochure og få et dybere indblik i de unikke rejseoplevelser, stærke fællesskaber og eventyrlige øjeblikke, der vil inspirere og præge dig for livet. 
                 <br> <br> Lad dig inspirere af de mange muligheder og find din næste store oplevelse!</p>
             </div>
     
 
-    <!-- sektion med knapper -->
-    <section class="relative -left-72 md:relative md:-left-32 md:order-1">
+      <!-- sektion med knapper -->
+         <section class="flex flex-col gap-10 pl-8 md:pl-14 mt-10">
         <!-- knap 1 -->
-        <div class="flex flex-col items-center w-full md:w-full sm:w-2/5 px-10 gap-0 text-center sm:text-left mt-16">
-            <div class="relative left-44 -top-24 md:relative md:-left-0">
+            <div class=" w-64 md:w-72">
                 <Button 
-                    textMobile="TILMELD MIG INFOMØDER HER"
-                    textDesktop="TILMELD MIG INFOMØDER HER"
-                    link="/card"
+                    textMobile="LÆS VORES BROCHURE HER "
+                    textDesktop="LÆS VORES BROCHURE HER "
+                    link="https://www.hojskolendk.dk/brochure/"
                     backgroundColor="#FF6E00"
                     textColor="#FFF"
-                    size="small"
+                    size="small md:large"
                 />
             </div>
-        </div>
 
-    <div class="md:flex md:flex-row">
+
+         <div class="flex flex-col md:flex-row gap-10 ">
         <!-- knap 2 -->
-        <div class="flex flex-col items-center w-full md:w-full sm:w-2/5 px-10 gap-0 text-center sm:text-left mt-16 md:order-1">
-            <div class="relative left-44 -top-24 md:relative md:left-32">
+            <div class=" w-80">
                 <Button 
-                    textMobile="TILMELD MIG INFOMØDER HER"
-                    textDesktop="TILMELD MIG INFOMØDER HER"
-                    link="/card"
+                    textMobile="DOWNLOAD VORES BROCHURE HER"
+                    textDesktop="DOWNLOAD VORES BROCHURE HER"
+                    link="https://www.hojskolendk.dk/brochure/"
                     backgroundColor="#FF6E00"
                     textColor="#FFF"
-                    size="small"
+                    size="small md:large"
                 />
             </div>
-        </div>
 
 
          <!-- knap 3 -->
-         <div class="flex flex-col items-center w-full md:w-full sm:w-2/5 px-10 gap-0 text-center sm:text-left mt-16 md:order-1">
-            <div class="relative left-44 -top-24 md:relative md:left-20">
+       
+            <div class="w-96">
                 <Button 
-                    textMobile="TILMELD MIG INFOMØDER HER"
-                    textDesktop="TILMELD MIG INFOMØDER HER"
-                    link="/card"
+                    textMobile="BESTIL VORES FYSISKE BROCHURE HJEM"
+                    textDesktop="BESTIL VORES FYSISKE BROCHURE HJEM"
+                    link="https://www.hojskolendk.dk/brochure/"
                     backgroundColor="#FF6E00"
                     textColor="#FFF"
-                    size="small"
+                    size="small md:large"
                 />
             </div>
         </div>
+        </section>
     </div>
-    </section>
+    
 
+    <div>
     <!-- img -->
-          <div class="w-full h-full pl-16 pr-20 object-cover md:w-screen md:h-screen">
-            <Image src={brochure} alt='gruppe af unge mennesker sammen' class="">
+          <div class="flex justify-center object-cover">
+            <Image src={brochure} alt='gruppe af unge mennesker sammen' class=" hover:scale-105">
         </div>
         <!-- for at gøre billede mindre så skriv md:pr-20 i class'en for image -->
-    </section>
-
+    </div>
  </section>
 
 
