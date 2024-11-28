@@ -1,37 +1,110 @@
 ---
 import { Image } from 'astro:assets';
 import brochure from "../assets/images/brochure.png";
+import Button from './Button.astro';
 ---
 
 <!-- STYLING NOTE:  -->
-<section class="pt-20 pl-5 pb-20 mx-4 ml-6 md:grid md:grid-cols-2 md:px-20 md:pb-32 md:pl-14 md:gap-10" style="">
-    <!-- tekst -->
-    <div class="px-8 pl-10 pb-16 md:ml-4 md:relative md:top-12">
-        <h3 class="pt-10 pb-5 text-sm md:text-lg" style="font-family: 'Onest-Black' sans-serif;">FÅ ET DYBERE INDBLIK</h3>
-        <h2 class="pb-6 pt-4 text-3xl md:text-5xl" style="font-weight: 900; font-family: 'Onest-Black' sans-serif;">LÆS VORES BROCHURE HER</h2>
-        <p class="pr-8 text-base md:text-base" style="font-family: 'Albert Sans' sans-serif;">Vil du vide mere om vores højskolerejser og alt det, vi tilbyder? <br> <br>
-            Hent vores brochure og få et dybere indblik i de unikke rejseoplevelser, stærke fællesskaber og eventyrlige øjeblikke, der vil inspirere og præge dig for livet. 
-            <br> <br> Lad dig inspirere af de mange muligheder og find din næste store oplevelse!</p>
+ <section class="">
+     <!-- sektion med tekst og img -->
+    <section class="pt-20 pl-5 pb-20 mx-4 ml-6 md:grid md:grid-cols-2 md:px-20 md:pl-14 md:gap-10" style="">
+        <!-- tekst -->
+        <div class="px-8 pl-10 pb-16 md:ml-4 md:relative md:top-12">
+            <h3 class="pt-10 pb-5 text-sm md:text-lg" style="font-family: 'Onest-Black' sans-serif;">FÅ ET DYBERE INDBLIK</h3>
+            <h2 class="pb-6 pt-4 text-3xl md:text-5xl" style="font-weight: 900; font-family: 'Onest-Black' sans-serif;">LÆS VORES BROCHURE HER</h2>
+            <p class="pr-8 text-base md:text-base" style="font-family: 'Albert Sans' sans-serif;">Vil du vide mere om vores højskolerejser og alt det, vi tilbyder? <br> <br>
+                Hent vores brochure og få et dybere indblik i de unikke rejseoplevelser, stærke fællesskaber og eventyrlige øjeblikke, der vil inspirere og præge dig for livet. 
+                <br> <br> Lad dig inspirere af de mange muligheder og find din næste store oplevelse!</p>
+            </div>
+    
 
-        <!-- seperat grid til knapper -->
-        <div class="md:grid md:grid-cols-2 md:mr-40">
-            <div class="pt-10 md:mr-24 md:relative md:top-5">
-                <h3 class="pb-6">knap 1</h3>
+    <!-- sektion med knapper -->
+    <section class="relative -left-72 md:relative md:-left-32 md:order-1">
+        <!-- knap 1 -->
+        <div class="flex flex-col items-center w-full md:w-full sm:w-2/5 px-10 gap-0 text-center sm:text-left mt-16">
+            <div class="relative left-44 -top-24 md:relative md:-left-0">
+                <Button 
+                    textMobile="TILMELD MIG INFOMØDER HER"
+                    textDesktop="TILMELD MIG INFOMØDER HER"
+                    link="/card"
+                    backgroundColor="#FF6E00"
+                    textColor="#FFF"
+                    size="small"
+                />
             </div>
         </div>
-        <div class="md:grid md:grid-cols-2 md:pt-12">
-            <div class="pb-6 pt-5">
-                <p>knap 2</p>
-            </div>
-            <div class="pt-6 pb-4">
-                <p>Knap 3</p>
-            </div>
 
+    <div class="md:flex md:flex-row">
+        <!-- knap 2 -->
+        <div class="flex flex-col items-center w-full md:w-full sm:w-2/5 px-10 gap-0 text-center sm:text-left mt-16 md:order-1">
+            <div class="relative left-44 -top-24 md:relative md:left-32">
+                <Button 
+                    textMobile="TILMELD MIG INFOMØDER HER"
+                    textDesktop="TILMELD MIG INFOMØDER HER"
+                    link="/card"
+                    backgroundColor="#FF6E00"
+                    textColor="#FFF"
+                    size="small"
+                />
+            </div>
+        </div>
+
+
+         <!-- knap 3 -->
+         <div class="flex flex-col items-center w-full md:w-full sm:w-2/5 px-10 gap-0 text-center sm:text-left mt-16 md:order-1">
+            <div class="relative left-44 -top-24 md:relative md:left-20">
+                <Button 
+                    textMobile="TILMELD MIG INFOMØDER HER"
+                    textDesktop="TILMELD MIG INFOMØDER HER"
+                    link="/card"
+                    backgroundColor="#FF6E00"
+                    textColor="#FFF"
+                    size="small"
+                />
+            </div>
         </div>
     </div>
+    </section>
 
-      <div class="w-full h-full pl-16 pr-20 object-cover md:w-screen md:h-screen">
-        <Image src={brochure} alt='gruppe af unge mennesker sammen' class="">
-    </div>
-    <!-- for at gøre billede mindre så skriv md:pr-20 i class'en for image -->
-</section>
+    <!-- img -->
+          <div class="w-full h-full pl-16 pr-20 object-cover md:w-screen md:h-screen">
+            <Image src={brochure} alt='gruppe af unge mennesker sammen' class="">
+        </div>
+        <!-- for at gøre billede mindre så skriv md:pr-20 i class'en for image -->
+    </section>
+
+ </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
