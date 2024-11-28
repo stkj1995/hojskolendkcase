@@ -1,5 +1,5 @@
 ---
-const { text, link, backgroundColor, textColor, size, additionalClasses } = Astro.props;
+const { textMobile, textDesktop, link, backgroundColor, textColor, size, additionalClasses } = Astro.props;
 ---
 
 <a href={link} 
@@ -11,6 +11,10 @@ const { text, link, backgroundColor, textColor, size, additionalClasses } = Astr
           rounded-2xl hover:scale-105 hover:bg-white 
           hover:text-orange-600 border-[20px]`}
    style={`background-color: ${backgroundColor}; color: ${textColor};`}>
-    <span class="block sm:hidden">{text}</span>
-    <span class="hidden sm:block">{text}</span>
+    
+    <!-- Tekst for mobil -->
+    <span class="block sm:hidden">{textMobile}</span>
+    
+    <!-- Tekst for desktop -->
+    <span class="hidden sm:block">{textDesktop}</span>
 </a>
