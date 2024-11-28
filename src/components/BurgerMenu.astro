@@ -1,56 +1,74 @@
----
----  
-
 <div class="relative">
-    <!-- Burger Icon -->
-    <button id="burger-icon" class="lg:hidden p-2">
-      <span id="burger-line-1" class="block w-6 h-1 bg-white mb-1 transition-all"></span>
-      <span id="burger-line-2" class="block w-6 h-1 bg-white mb-1"></span>
-      <span id="burger-line-3" class="block w-6 h-1 bg-white mb-1 transition-all"></span>
-    </button>
-  
-    <!-- Menu (hidden by default) -->
-    <div id="burger-menu" class="lg:hidden absolute top-0 right-0 mt-8 w-full bg-gray-700 p-4 rounded-lg hidden">
-      <ul class="space-y-4">
-        <li><a href="#" class="text-white hover:text-gray-300">Hjem</a></li>
-        <li><a href="#" class="text-white hover:text-gray-300">Om os</a></li>
-        <li><a href="#" class="text-white hover:text-gray-300">Tjenester</a></li>
-        <li><a href="#" class="text-white hover:text-gray-300">Kontakt</a></li>
-      </ul>
+  <!-- Burger Icon -->
+  <button
+    onclick="toggleMenu()"
+    aria-label="Toggle menu"
+    class="burger-icon p-2 focus:outline-none lg:hidden"
+  >
+    <div class="space-y-1">
+      <span
+        class="block w-6 h-0.5 bg-white transition-transform duration-300"
+      ></span>
+      <span
+        class="block w-6 h-0.5 bg-white transition-opacity duration-300"
+      ></span>
+      <span
+        class="block w-6 h-0.5 bg-white transition-transform duration-300"
+      ></span>
     </div>
+  </button>
+
+  <!-- Menu -->
+  <div
+    class="menu absolute top-12 right-0 bg-gray-100 p-4 rounded shadow-lg lg:static lg:bg-transparent lg:p-0 lg:shadow-none lg:flex lg:space-x-6 hidden"
+  >
+    <ul class="space-y-4 lg:space-y-0 lg:flex lg:items-center lg:space-x-6">
+      <li><a href="/" class="block text-black hover:text-gray-700">Hjem</a></li>
+      <li><a href="/about" class="block text-black hover:text-gray-700">Om os</a></li>
+      <li><a href="/services" class="block text-black hover:text-gray-700">Tjenester</a></li>
+      <li><a href="/contact" class="block text-black hover:text-gray-700">Kontakt</a></li>
+    </ul>
   </div>
-  
-  <!-- Script to toggle menu visibility and burger icon transformation -->
-  <script>
-    const burgerIcon = document.getElementById('burger-icon');
-    const burgerMenu = document.getElementById('burger-menu');
-    const line1 = document.getElementById('burger-line-1');
-    const line2 = document.getElementById('burger-line-2');
-    const line3 = document.getElementById('burger-line-3');
-  
-    // Flag to track if the menu is open or closed
-    let isOpen = false;
-  
-    // Add event listener for click on burger icon
-    burgerIcon.addEventListener('click', function () {
-      // Toggle the state of the menu
-      isOpen = !isOpen;
-  
-      if (isOpen) {
-        // Menu is open, show the menu and transform the burger icon
-        burgerMenu.classList.remove('hidden');
-  
-        line1.classList.add('rotate-45', 'translate-y-2');
-        line2.classList.add('opacity-0');
-        line3.classList.add('-rotate-45', '-translate-y-2');
-      } else {
-        // Menu is closed, hide the menu and reset the burger icon
-        burgerMenu.classList.add('hidden');
-  
-        line1.classList.remove('rotate-45', 'translate-y-2');
-        line2.classList.remove('opacity-0');
-        line3.classList.remove('-rotate-45', '-translate-y-2');
-      }
-    });
-  </script>
-  
+</div>
+
+<script>
+  // Initial tilstand for menuen (lukket)
+  let isOpen = false;
+
+  // Funktion til at togglere åbning/lukning af menuen
+  function toggleMenu() {
+    // Skift tilstand (åben/lukket)
+    isOpen = !isOpen;
+
+    // Find menuen og burger-ikonet i DOM'en
+    const menu = document.querySelector('.menu');
+    const burgerIcon = document.querySelector('.burger-icon');
+
+    // Toggler klassen 'hidden' på menuen for at vise/skjule den
+    menu.classList.toggle('hidden', !isOpen);
+
+    // Optional: du kan ændre ikonet, når menuen er åben/åben
+    if (isOpen) {
+      // Skift burger-ikonet til krydsikon (f.eks. ved at rotere dem)
+      burgerIcon.classList.add('open');
+    } else {
+      // Skift burger-ikonet tilbage til standard
+      burgerIcon.classList.remove('open');
+    }
+  }
+</script>
+
+<style>
+  /* Burger-ikonets tilstand for at rotere til et krydsikon */
+  .burger-icon.open div span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+
+  .burger-icon.open div span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-icon.open div span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+</style>
