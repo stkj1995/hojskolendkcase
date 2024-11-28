@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
-import tailwind from "@astrojs/tailwind";
-import alpinejs from "@astrojs/alpinejs";
+import tailwind from '@astrojs/tailwind';
+import alpinejs from '@astrojs/alpinejs';
 import react from '@astrojs/react'; // Import React integration
 
 // https://astro.build/config
