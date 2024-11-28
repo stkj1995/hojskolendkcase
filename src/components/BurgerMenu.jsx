@@ -35,6 +35,17 @@ const BurgerMenu = () => {
           bottom: 0, // Fills the whole height
         }}
       >
+        {/* Logo */}
+        <div className="absolute top-8 left-8 z-20">
+          <a href="/" className="block group">
+            <img 
+             src="/src/assets/images/logo.svg"
+              alt="Logo" 
+              className="h-16 w-auto md:h-24" 
+            />
+          </a>
+        </div>
+
         <ul className="text-center">
           <li>
             <a href="/card" className="text-white uppercase font-black text-3xl hover:text-white hover:underline hover:underline-offset-4">
@@ -42,7 +53,7 @@ const BurgerMenu = () => {
             </a>
             <br /> <br />
             <a href="/card" className="text-white uppercase font-black text-3xl hover:text-white hover:underline hover:underline-offset-4">
-             Tilmeld dig ophold
+              Tilmeld dig ophold
             </a>
           </li>
         </ul>
