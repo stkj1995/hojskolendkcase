@@ -1,0 +1,61 @@
+---
+import { Image } from 'astro:assets';
+import infomoedeimg from "../assets/images/infomoedeimg.png";
+import hvid_cirkel from "../assets/images/hvid_cirkel.png";
+---
+
+<!-- STYLING NOTE: Img skal være bredere og have en større border radius -->
+<section class="pt-10 pl-5 pb-20 mx-4 ml-6 md:grid md:grid-cols-2 md:px-20 md:mb-36 md:pt-28 md:pl-14 md:mx-12" style="background-color: #7794B0; border-radius: 30px;">
+    <!-- tekst -->
+    <div class="px-8 pl-10 pb-32 text-white">
+        <h3 class="pt-10 pb-5">EN VIGTIG MULIGHED</h3>
+        <h1 class="pb-6 font-bold pt-4">INFOMØDER</h1>
+        <p class="pr-8">Hvis du drømmer om et fantastisk rejseeventyr med masser af adventure, vilde naturoplevelser og spændende kulturmøder så smut forbi et af vores hyggelige infomøder i København eller Aarhus – eller mød os på et online infomøde.
+        </p>
+
+        <!-- seperat grid til kbh, aarhus og online -->
+        <div class="md:grid md:grid-cols-2 md:mr-40">
+            <!-- København -->
+            <div class="pt-10 md:mr-24 md:relative md:top-5">
+                <h3 class="pb-6">KØBENHAVN</h3>
+                <div class="flex items-center gap-4 md:gap-14 md:relative md:top-1">
+                    <p class="flex-shrink-0">16 januar 2025</p>
+                    <Image src={hvid_cirkel} alt="hvid cirkel" class="rounded-3xl" />
+                    <p class="flex-shrink-0">Kl. 17-19</p> 
+                </div>
+            </div>
+        
+            <!-- Aarhus -->
+            <div class=" order-1 pt-16">
+                <h3 class="pb-6">AARHUS</h3>
+                <div class="flex items-center gap-4 md:gap-14">
+                    <p class="flex-shrink-0">14 januar 2025</p>
+                    <Image src={hvid_cirkel} alt="hvid cirkel" class="rounded-3xl" />
+                    <p class="flex-shrink-0">Kl. 17-19</p> 
+                </div>
+            </div>
+
+           <!-- Online -->
+           <div class="pt-16 md:pl-36">
+            <h3 class="pb-6">ONLINE</h3>
+            <div class="flex items-center gap-4 md:gap-14">
+                <p class="flex-shrink-0">13 november 2024</p>
+                <Image src={hvid_cirkel} alt="hvid cirkel" class="rounded-3xl" />
+                <p class="flex-shrink-0">Kl. 17-19</p> 
+            </div>
+            <div class="flex items-center gap-4 md:gap-14 pt-5">
+                <p class="flex-shrink-0">21 januar 2024</p>
+                <Image src={hvid_cirkel} alt="hvid cirkel" class="rounded-3xl" />
+                <p class="flex-shrink-0">Kl. 17-19</p> 
+            </div>
+        </div>
+        </div>
+    </div>
+      <!-- img // ret billedernes højde i mobil-->
+      <div class="w-full h-full pl-16 pr-20 object-cover md:w-screen md:h-screen md:ml-16">
+        <Image src={infomoedeimg} alt='gruppe af unge mennesker sammen' class="rounded-3xl">
+    </div>
+
+    <!-- <Button></Button>!!!!!! -->
+     <p class="relative left-64 md:relative md:top-[-600px] md:left-52" style="top: -40px;">knap</p>
+</section>

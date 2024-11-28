@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import gruppebillede3 from "../assets/images/gruppebillede3.png";
+---
+
+
+<section class="pl-5 md:pt-20 md:grid md:grid-cols-2 md:px-20 md:pb-32 md:gap-10">
+<!-- tekst -->
+    <div class="px-8 pl-16 pb-20 md:pl-10 md:mr-12">
+        <h3 class="pt-10 pb-5">DIT LIVS EVENTYR</h3>
+        <h1 class="pb-6 font-bold" style="font-family:'Onest-Black', sans-serif;">TAG PÅ HØJSKOLE I UDLANDET</h1>
+        <p class="pr-8">Drømmer du om at kombinere rejser, læring og fællesskab? Med HÖJSKOLENDK får du mulighed for at tage på højskoleophold i udlandet og opleve verden på en helt ny måde. Vælg mellem korte sommerophold på 5 uger eller længere ophold på 2-3 måneder i dit sabbatår – begge fyldt med unikke oplevelser og personlig udvikling. Du får chancen for at udforske alt fra smukke sandstrande på Bali til den pulserende storby New York, alt imens du dykker ned i nye kulturer og skaber livslange venskaber. 
+        <br> <br> Et højskoleophold er mere end bare rejser. Det er en investering i dig selv, hvor du kan udfordre dine grænser, opdage nye interesser og styrke dine kompetencer i et inspirerende fællesskab. Uanset om du søger eventyr, selvudvikling eller blot ønsker at skabe minder for livet, kan et ophold med HÖJSKOLENDK være starten på en uforglemmelig rejse. Lad verden blive din højskole og inspiration til fremtiden!</p>
+    </div>
+
+    <!-- img // ret billedernes højde i mobil-->
+    <div class="w-full h-full pl-16 pr-20 object-cover md:order-1 pb-20 md:relative md:top-16">
+         <Image src={gruppebillede3} alt='gruppe af unge mennesker sammen' class="rounded-3xl">
+    </div>
+</section>

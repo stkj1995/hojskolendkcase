@@ -1,0 +1,42 @@
+---
+import { Image } from 'astro:assets';
+import hoejskole1 from "../assets/images/hoejskole1.webp";
+import hoejskole2 from "../assets/images/hoejskole2.webp";
+---
+
+<!-- billeder skal ændres fra webp til png og mangler font styling (str osv - tjek designsystem) -->
+
+<!-- section 1  -->
+<section class="pt-10 pl-5 md:grid md:grid-cols-2 md:px-20 md:pl-16">
+    <!-- img // ret billedernes højde i mobil-->
+    <div class="w-full h-full pl-16 object-cover">
+        <Image src={hoejskole1} alt='gruppe af unge mennesker sammen' class="rounded-3xl">
+    </div>
+<!-- tekst -->
+    <div class="px-8 pl-16 pb-32">
+        <h3 class="pt-10 pb-5">UDLEV DRØMMEN</h3>
+        <h1 class="pb-6 font-bold" style="font-family:'Onest-Black', sans-serif;">DIT HØJSKOLEEVENTYR VENTER</h1>
+        <p class="pr-8">Tag på højskole i udlandet og oplev et unikt rejseeventyr med stærkt fællesskab, spændende oplevelser og personlig udvikling. Med udgangspunkt i højskolens værdier, fællesskab og dannelse, kan du udforske verden gennem frivilligt arbejde, adventure- og naturoplevelser, sprogundervisning og inspirerende læring, der kombinerer det legende med det lærende. 
+           <br> <br> Vores elever beskriver HÖJSKOLENDK som 'eventyrlige dannelsesrejser med noget på hjerte'. Her handler det om at udfordre dig selv, flytte grænser og finde mere mod og afklaring om fremtiden.
+            <br> <br>Hvis du drømmer om at opleve verden, udleve rejsedrømme og få et eventyr for livet, så er højskole i udlandet noget for dig.
+        </p>
+    </div>
+</section>
+
+
+<!-- section 2  -->
+<section class="pl-5 md:grid md:grid-cols-2 md:px-20 md:pt-28 md:pb-32 md:pl-20">
+    <!-- img // ret billedernes højde i mobil-->
+    <div class="w-full h-full pl-16 pr-20 object-cover md:order-1">
+        <Image src={hoejskole2} alt='gruppe af unge mennesker sammen' class="rounded-3xl">
+    </div>
+
+<!-- tekst -->
+    <div class="px-8 pl-16 pb-32 md:pl-20">
+        <h3 class="pt-10 pb-5">FÆLLESSKAB OG EVENTYR</h3>
+        <h1 class="pb-6 font-bold" style="font-family:'Onest-Black', sans-serif;">HØJSKOLE I UDLANDET</h1>
+        <p class="pr-8">Når du rejser på højskole i udlandet med HÖJSKOLENDK, bliver du en del af et fantastisk fællesskab med stærkt sammenhold, samtidig med at du oplever vilde naturoplevelser, adventure og spændende kulturmøder. Du opdager nye og stærke sider af dig selv, flytter grænser og opnår mere selvtillid, alt imens du rejser med passionerede danske rejseledere og engagerede undervisere. Alt dette gør din rejse til et uforglemmeligt, unikt og trygt eventyr for livet.
+              <br> <br> Med en kombination af højskole, grupperejser, rejseeventyr, frihed og inspirerende undervisning hjælper vi dig med at finde ind til, hvad der virkelig betyder noget for dig – hvad du brænder for, og hvad der føles meningsfuldt – så du kan forfølge dine drømme.      
+        </p>
+    </div>
+</section>
