@@ -14,11 +14,11 @@ const BurgerMenu = () => {
       <button onClick={toggleMenu} aria-label="Toggle menu" className="p-2">
         <div className="space-y-1">
           {/* Top bar */}
-          <span className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${isOpen ? "rotate-45 translate-y-1.5" : ""}`}></span>
+          <span className={`block w-6 h-1 bg-white transition-transform duration-300 ${isOpen ? "rotate-45 translate-y-1.5" : ""}`}></span>
           {/* Middle bar (hidden when open) */}
-          <span className={`block w-6 h-0.5 bg-white transition-opacity duration-300 ${isOpen ? "opacity-0" : ""}`}></span>
+          <span className={`block w-6 h-1 bg-white transition-opacity duration-300 ${isOpen ? "opacity-0" : ""}`}></span>
           {/* Bottom bar */}
-          <span className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`}></span>
+          <span className={`block w-6 h-1 bg-white transition-transform duration-300 ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`}></span>
         </div>
       </button>
 
@@ -51,7 +51,7 @@ const BurgerMenu = () => {
         <button
           onClick={toggleMenu}
           aria-label="Close menu"
-          className="absolute top-11 right-8 text-white text-3xl"
+          className="absolute top-10 right-7 text-white text-5xl"
         >
           &times;
         </button>
