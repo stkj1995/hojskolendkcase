@@ -1,6 +1,22 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro";
 import { Image } from 'astro:assets';
 import cardimg from "../assets/images/card.webp";
 ---
 
-<Image src={cardimg} alt="Instagram 1"/>
+<MainLayout title="Højskolendk Case">
+<section class=" flex flex-col justify-center mt-40 w-4/5 mx-auto rounded-3xl	" style="background-color: #7794B0;">
+    <Image src={cardimg} alt="Instagram" class="w-48 object-cover rounded-3xl	"/>
+    <h3 class="font-black uppercase text-white">hawaii, australien, japan, bali & gili islands</h3>
+<p>Varighed: 4 måneder</p>
+<p>INTRODAGE: New York City, USA</p>
+<p>1. måned: Oahu, Hawaii</p>
+<p>2. måned: Byron Bay, Australien</p>
+<p>3. måned: Tokyo, Kyoto, Hiroshima & Osaka, Japan</p>
+<p>4. måned: Ubud, Bali & Gili Islands</p>
+
+<p>AFREJSE</p>
+
+
+</section>
+</MainLayout>
