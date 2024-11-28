@@ -58,6 +58,13 @@ const BurgerMenu = () => {
           </li>
         </ul>
 
+        {/* Tilmeld Button */}
+        <div className="mt-8">
+          <a href="/card" className="block text-center bg-[#FF6E00] text-white text-sm font-bold py-3 px-6 rounded-xl uppercase transition-all duration-300 hover:bg-orange-600 hover:scale-105">
+            Tilmeld
+          </a>
+        </div>
+
         {/* Close button (X) in the top-right corner */}
         <button
           onClick={toggleMenu}
