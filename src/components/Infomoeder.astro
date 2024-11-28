@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import infomoedeimg from "../assets/images/infomoedeimg.png";
 import hvid_cirkel from "../assets/images/hvid_cirkel.png";
+import Button from './Button.astro';
 ---
 
 <!-- STYLING NOTE: Img skal være bredere og have en større border radius -->
@@ -51,11 +52,24 @@ import hvid_cirkel from "../assets/images/hvid_cirkel.png";
         </div>
         </div>
     </div>
-      <!-- img // ret billedernes højde i mobil-->
-      <div class="w-full h-full pl-16 pr-20 object-cover md:w-screen md:h-screen md:ml-16">
-        <Image src={infomoedeimg} alt='gruppe af unge mennesker sammen' class="rounded-3xl">
+
+    <div class="flex flex-col items-center sm:items-start w-full md:w-full sm:w-2/5 px-10 gap-0 text-center sm:text-left mt-16 md:order-1">
+        <div class="relative left-44 -top-24 md:relative md:top-[-600px] md:-left-0">
+            <Button 
+                textMobile="TILMELD MIG INFOMØDER HER"
+                textDesktop="TILMELD MIG INFOMØDER HER"
+                link="/card"
+                backgroundColor="#FF6E00"
+                textColor="#FFF"
+                size="small"
+            />
+        </div>
     </div>
 
-    <!-- <Button></Button>!!!!!! -->
-     <p class="relative left-64 md:relative md:top-[-600px] md:left-52" style="top: -40px;">knap</p>
+
+
+      <!-- img // ret billedernes højde i mobil-->
+      <div class="w-full h-full pl-20 pr-20 object-cover md:w-screen md:h-screen md:ml-16 md:top-20">
+        <Image src={infomoedeimg} alt='gruppe af unge mennesker sammen' class="rounded-3xl">
+    </div>
 </section>
