@@ -38,11 +38,7 @@ const BurgerMenu = () => {
         {/* Logo */}
         <div className="absolute top-8 left-8 z-20">
           <a href="/" className="block group">
-            <img 
-             src="/src/assets/images/logo.svg"
-              alt="Logo" 
-              className="h-16 w-auto md:h-24" 
-            />
+            <img src="/src/assets/images/logo.svg" alt="Logo" className="h-16 w-auto md:h-24" />
           </a>
         </div>
 
@@ -59,18 +55,14 @@ const BurgerMenu = () => {
         </ul>
 
         {/* Tilmeld Button */}
-        <div className="mt-8">
-          <a href="/card" className="block text-center bg-[#FF6E00] text-white text-sm font-bold py-3 px-6 rounded-xl uppercase transition-all duration-300 hover:bg-orange-600 hover:scale-105">
+        <div className="absolute top-12 right-20 z-20">
+          <a href="/card" className="block text-center bg-[#FF6E00] text-white hover:text-white hover:underline text-sm font-bold py-3 px-6 rounded-xl uppercase transition-all duration-300 hover:bg-orange-600 hover:scale-105">
             Tilmeld
           </a>
         </div>
 
         {/* Close button (X) in the top-right corner */}
-        <button
-          onClick={toggleMenu}
-          aria-label="Close menu"
-          className="absolute top-10 right-7 text-white text-5xl"
-        >
+        <button onClick={toggleMenu} aria-label="Close menu" className="absolute top-10 right-7 text-white text-5xl">
           &times;
         </button>
       </div>
