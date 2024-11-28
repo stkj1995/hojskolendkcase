@@ -14,11 +14,11 @@ const BurgerMenu = () => {
       <button onClick={toggleMenu} aria-label="Toggle menu" className="p-2">
         <div className="space-y-1">
           {/* Top bar */}
-          <span className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${isOpen ? "rotate-45 translate-y-1.5" : ""}`}></span>
+          <span className={`block w-6 h-1 bg-white transition-transform duration-300 ${isOpen ? "rotate-45 translate-y-1.5" : ""}`}></span>
           {/* Middle bar (hidden when open) */}
-          <span className={`block w-6 h-0.5 bg-white transition-opacity duration-300 ${isOpen ? "opacity-0" : ""}`}></span>
+          <span className={`block w-6 h-1 bg-white transition-opacity duration-300 ${isOpen ? "opacity-0" : ""}`}></span>
           {/* Bottom bar */}
-          <span className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`}></span>
+          <span className={`block w-6 h-1 bg-white transition-transform duration-300 ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`}></span>
         </div>
       </button>
 
@@ -35,6 +35,13 @@ const BurgerMenu = () => {
           bottom: 0, // Fills the whole height
         }}
       >
+        {/* Logo */}
+        <div className="absolute top-8 left-8 z-20">
+          <a href="/" className="block group">
+            <img src="/src/assets/images/logo.svg" alt="Logo" className="h-16 w-auto md:h-24" />
+          </a>
+        </div>
+
         <ul className="text-center">
           <li>
             <a href="/card" className="text-white uppercase font-black text-3xl hover:text-white hover:underline hover:underline-offset-4">
@@ -42,17 +49,20 @@ const BurgerMenu = () => {
             </a>
             <br /> <br />
             <a href="/card" className="text-white uppercase font-black text-3xl hover:text-white hover:underline hover:underline-offset-4">
-             Tilmeld dig ophold
+              Tilmeld dig ophold
             </a>
           </li>
         </ul>
 
+        {/* Tilmeld Button */}
+        <div className="absolute top-12 right-20 z-20">
+          <a href="/card" className="block text-center bg-[#FF6E00] text-white hover:text-white hover:underline text-sm font-bold py-3 px-6 rounded-xl uppercase transition-all duration-300 hover:bg-orange-600 hover:scale-105">
+            Tilmeld
+          </a>
+        </div>
+
         {/* Close button (X) in the top-right corner */}
-        <button
-          onClick={toggleMenu}
-          aria-label="Close menu"
-          className="absolute top-11 right-8 text-white text-3xl"
-        >
+        <button onClick={toggleMenu} aria-label="Close menu" className="absolute top-10 right-7 text-white text-5xl">
           &times;
         </button>
       </div>
