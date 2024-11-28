@@ -17,17 +17,16 @@ import Button from "./Button.astro";
 
     <!-- Kolonne 2 - CTA2-knap -->
      <!-- <Button></Button> -->
-    <div class="flex flex-col items-center sm:items-start w-full sm:w-2/5 px-10 gap-0 text-center sm:text-left mt-16">
-        <div class="right-20 top-12 z-20 sm:right-4 md:right-8">
-            <a href="https://www.hojskolendk.dk/tilmeld/tilmeld-dig-hoejskole-i-udlandet-hojskolendk/" 
-            target="_blank" 
-            class="block px-6 py-3 sm:px-8 sm:py-4 uppercase text-sm md:text-base hover:bg-white hover:text-orange-600 hover:scale-105 transition-transform duration-300 transform rounded-2xl border-[20px]"
-            style="background-color: white; color: #FF6E00;">
-                <!-- Tekst for mobile -->
-                <span class="block sm:hidden">Tilmeld dig dit højskoleophold</span>
-                <!-- Tekst for desktop -->
-                <span class="hidden sm:block">Tilmeld dig dit højskoleophold</span>
-            </a>
+     <div class="flex flex-col items-center sm:items-start w-full sm:w-2/5 px-10 gap-0 text-center sm:text-left mt-16">
+        <div class="right-20 top-12 z-20 sm:right-4 md:right-8 md:ml-20">
+            <Button 
+                textMobile="Tilmeld dig dit højskoleophold"
+                textDesktop="Tilmeld dig dit højskoleophold"
+                link="https://www.hojskolendk.dk/tilmeld/tilmeld-dig-hoejskole-i-udlandet-hojskolendk/"
+                backgroundColor="white"
+                textColor="#FF6E00"
+                size="large"
+            />
         </div>
     </div>
 </div>
