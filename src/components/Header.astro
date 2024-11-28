@@ -1,7 +1,9 @@
 ---
 import logo from "../assets/images/logo.svg";
 import Button from "./Button.astro";
+import BurgerMenu from '../components/BurgerMenu.astro';
 ---
+
 <div class="max-w-screen-xl mx-auto">
     <header>
         <!-- Logo -->
@@ -32,35 +34,8 @@ import Button from "./Button.astro";
             />
         </div>
 
-        <!-- Burgermenu -->
-        <div class="absolute right-8 top-14 z-20 sm:block md:hidden">
-            <button id="burger-icon" class="text-white w-7 h-5 flex flex-col justify-between items-center">
-                <span class="block w-full h-1 bg-white transition-all duration-300" id="line-1"></span>
-                <span class="block w-full h-1 bg-white transition-all duration-300" id="line-2"></span>
-                <span class="block w-full h-1 bg-white transition-all duration-300" id="line-3"></span>
-            </button>
-        </div>
-        
-        <!-- Navigation menu (hidden by default) -->
-        <div id="menu" class="absolute top-16 right-0 w-64 bg-black text-white p-4 rounded-lg opacity-0 visibility-hidden transition-all duration-300">
-            <ul>
-                <li class="mb-4">
-                    <a href="/" class="block text-lg hover:text-gray-300">Home</a>
-                </li>
-                <li class="mb-4">
-                    <a href="/about" class="block text-lg hover:text-gray-300">About Us</a>
-                </li>
-                <li class="mb-4">
-                    <a href="/services" class="block text-lg hover:text-gray-300">Services</a>
-                </li>
-                <li class="mb-4">
-                    <a href="/contact" class="block text-lg hover:text-gray-300">Contact</a>
-                </li>
-            </ul>
-        </div>
-        
         <!-- Sticky CTA-knap Header -->
-         <div class="bottom-8 right-5 z-20 fixed">
+        <div class="bottom-8 right-10 z-20 fixed">
             <Button 
                 textMobile="Book Ophold Nu"
                 textDesktop="Book Ophold Nu"
@@ -70,102 +45,12 @@ import Button from "./Button.astro";
                 size="large"
                 additionalClasses="flex items-center justify-center text-center h-24 w-24 text-white uppercase text-base md:text-base hover:scale-105 transition-transform duration-300 transform border border-transparent hover:border-white rounded-full"
             />
-        </div>   
+        </div>
 
-        <script>
-        // Toggle burger menu visibility
-        document.getElementById("burger-icon").addEventListener("click", function() {
-            const menu = document.getElementById("menu");
-            const line1 = document.getElementById("line-1");
-            const line2 = document.getElementById("line-2");
-            const line3 = document.getElementById("line-3");
+        <!-- Burger Menu-->
+        <div class="absolute top-12 right-6 z-20 sm:block md:hidden">
+            <BurgerMenu />
+        </div>
 
-            // Toggle menu visibility
-            menu.classList.toggle("show");
-
-            // Rotate burger lines and change the middle line to a cross
-            line1.classList.toggle("rotate-45");
-            line2.classList.toggle("opacity-0");
-            line3.classList.toggle("-rotate-45");
-        });
-        </script>
-        
-        <style>
-        /* Burger icon lines transition */
-        #line-1, #line-2, #line-3 {
-            transition: all 0.3s ease;
-        }
-
-        /* Rotation and disappearing middle line when clicked */
-        .rotate-45 {
-            transform: rotate(45deg);
-        }
-
-        .-rotate-45 {
-            transform: rotate(-45deg);
-        }
-
-        .opacity-0 {
-            opacity: 0;
-        }
-
-                /* Styling for menu *//* Burger icon lines transition */
-        #line-1, #line-2, #line-3 {
-            transition: all 0.3s ease;
-        }
-
-        /* Rotation and disappearing middle line when clicked */
-        .rotate-45 {
-            transform: rotate(45deg);
-        }
-
-        .-rotate-45 {
-            transform: rotate(-45deg);
-        }
-
-        .opacity-0 {
-            opacity: 0;
-        }
-
-        /* Styling for menu */
-        #menu {
-            position: absolute;
-            top: 16px;
-            right: 0;
-            width: 250px;
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            border-radius: 8px;
-            transform: translateX(100%);  /* Initially off-screen to the right */
-        }
-
-        /* When menu is shown */
-        #menu.show {
-            transform: translateX(0);  /* Slide into view */
-            transition: transform 0.3s ease; /* Smooth slide effect */
-        }
-
-        /* Styling for menu links */
-        #menu ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        #menu ul li {
-            margin-bottom: 16px;
-        }
-
-        #menu ul li a {
-            text-decoration: none;
-            font-size: 18px;
-            color: white;
-            transition: color 0.3s ease;
-        }
-
-        #menu ul li a:hover {
-            color: #ddd; /* Lighter color when hovering */
-        }
-
-        </style>
-        
+    </header>
+</div>
