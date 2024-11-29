@@ -121,13 +121,14 @@ import Button from "./Button.astro"
 
 
 <script>
+  document.addEventListener('DOMContentLoaded', function() {
     const scrollContainer = document.querySelector('.overflow-x-auto');
     const scrollLeft = document.getElementById('scroll-left');
     const scrollRight = document.getElementById('scroll-right');
     
     scrollLeft.addEventListener('click', () => {
       scrollContainer.scrollBy({
-        left: scrollContainer.clientWidth / 4, 
+        left: -scrollContainer.clientWidth / 4, 
         behavior: 'smooth',
       });
     });
@@ -138,5 +139,6 @@ import Button from "./Button.astro"
         behavior: 'smooth', 
       });
     });
-    
-    </script>
+  });
+  </script>
+  
